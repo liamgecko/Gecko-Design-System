@@ -1,0 +1,15 @@
+.color-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: $spacer;
+    grid-row-gap: $spacer;
+    .color-block-item {
+        overflow: hidden;
+    }
+}
+
+.color-block-swatch {
+    display: block;
+    height: 6rem;
+    width: 100%;
+}

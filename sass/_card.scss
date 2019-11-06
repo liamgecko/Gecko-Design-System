@@ -1,0 +1,100 @@
+//
+// Base styles
+//
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+    word-wrap: break-word;
+    background-clip: border-box;
+  
+    > hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    > .list-group:first-child {
+      .list-group-item:first-child {
+        @include border-top-radius($card-border-radius);
+      }
+    }
+  
+    > .list-group:last-child {
+      .list-group-item:last-child {
+        @include border-bottom-radius($card-border-radius);
+      }
+    }
+  }
+  
+  .card-body {
+    // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+    // as much space as possible, ensuring footers are aligned to the bottom.
+    flex: 1 1 auto;
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+  
+  //
+  // Optional textual caps
+  //
+  
+  .card-header {
+    margin-bottom: 0; // Removes the default margin-bottom of <hN>
+    // border-bottom: $card-border-width solid $card-border-color;
+
+    h3 {
+      margin: 0;
+      font-size: $font-size-large;
+    }
+  
+    &:first-child {
+      @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+    }
+  
+    + .list-group {
+      .list-group-item:first-child {
+        border-top: 0;
+      }
+    }
+  }
+  
+  .card-footer {  
+    &:last-child {
+      @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+    }
+  }
+  
+  
+  //
+  // Header navs
+  //
+  
+  .card-header-tabs {
+    margin-right: -$card-spacer-x / 2;
+    margin-bottom: -$card-spacer-y;
+    margin-left: -$card-spacer-x / 2;
+    border-bottom: 0;
+  }
+  
+  .card-header-pills {
+    margin-right: -$card-spacer-x / 2;
+    margin-left: -$card-spacer-x / 2;
+  }
+  
+  // Card image
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $card-img-overlay-padding;
+  }
+  
+  .card-img {
+    width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+    @include border-top-radius($card-inner-border-radius);
+  }

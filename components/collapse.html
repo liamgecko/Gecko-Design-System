@@ -1,0 +1,267 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+          <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+          <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+          <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+          <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+          <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Collapse</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="collapse-how-it-works">How It Works</h2>
+
+              <p>The collapse component is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from its current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.</p>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="collapse-buttons">Collapse via Buttons</h2>
+
+              <p>Click the buttons below to show and hide another element via class changes:</p>
+
+                <ul>
+                  <li>.collapse hides content</li>
+                  <li>.collapsing is applied during transitions</li>
+                  <li>.collapse.show shows content</li>
+                </ul>
+
+              <p>You can use a link with the href attribute, or a button with the data-target attribute. In both cases, the data-toggle="collapse" is required.</p>
+
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+              </a>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+              </button>
+
+              <div class="collapse" id="collapseExample">
+                <div class="collapse-body pt-3">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight my-3">
+<pre><code data-language="html"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Button with data-target
+</button>
+<div class="collapse" id="collapseExample">
+  <div class="collapse-body pt-3">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="collapse-accordion">Collapse via Accordion</h2>
+
+              <p>Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use .accordion as a wrapper.</p>
+
+              <div class="accordion" id="accordionExample">
+
+                <div class="card">
+                  <div class="border-bottom pb-3 mb-3" id="headingOne">
+                    <h4 class="collapse-header mb-0">
+                      <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                        <i class="fa float-right" aria-hidden="true"></i>
+                      </button>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="collapse-body pb-3">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="border-bottom pb-3 mb-3" id="headingTwo">
+                    <h4 class="collapse-header mb-0">
+                      <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                        <i class="fa float-right" aria-hidden="true"></i>
+                      </button>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="collapse-body pb-3">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="border-bottom pb-3 mb-3" id="headingThree">
+                    <h4 class="collapse-header mb-0">
+                      <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                        <i class="fa float-right" aria-hidden="true"></i>
+                      </button>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="collapse-body pb-3">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight my-3">
+<pre><code data-language="html"><div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="collapse-header border-bottom pb-3 mb-3" id="headingOne">
+      <h4 class="mb-0">
+        <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Heading
+          <i class="fa float-right" aria-hidden="true"></i>
+        </button>
+      </h4>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="collapse-body pb-3">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="collapse-accessibility">Accessibility</h2>
+
+              <p>Be sure to add aria-expanded to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of aria-expanded="false". If you’ve set the collapsible element to be open by default using the show class, set aria-expanded="true" on the control instead. The component will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an anchor tag or div), the attribute role="button" should be added to the element.</p>
+
+              <p>If your control element is targeting a single collapsible element – i.e. the data-target attribute is pointing to an id selector – you should add the aria-controls attribute to the control element, containing the id of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+
+            </section>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Section</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#collapse-how-it-works">How It Works</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#collapse-buttons">Collapse via Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#collapse-accordion">Collapse via Accordion</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#collapse-accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js" ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

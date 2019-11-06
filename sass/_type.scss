@@ -1,0 +1,36 @@
+@each $color, $value in $theme-colors {
+    @include color-variant(".color-#{$color}", $value);
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bolder;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+.list-unstyled {
+    @include list-unstyled;
+}
+
+.list-inline {
+    @include list-unstyled;
+    li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: $list-inline-padding;
+        }
+    }
+}

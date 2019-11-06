@@ -1,0 +1,27 @@
+.avatar-example {
+    &:after, 
+    &:before {
+        content: "";
+        height: 25%;
+        width: 25%;
+        position: absolute;
+        border-radius: $border-radius-circle;
+        border: 2px solid $white;
+    }
+    &:after {
+        background: $lime;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        background: $red;
+        left: 0;
+        top: 0;
+    }
+}
+
+.modal-example {
+    position: relative;
+    z-index: 1;
+    display: block;
+}

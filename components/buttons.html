@@ -1,0 +1,514 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Buttons</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="buttons-default">Default Button Styles</h2>
+
+              <p>We have a default set of buttons and a variety of ways in which they can be used. Documented here are the rules that define those actions along with when and how they should be used.</p>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+</code></pre>
+</figure>
+
+              <h3 class="mt-5">Buttons and Links</h3>
+
+              <p>The HTML elements for buttons and links describe a very specific type of action that is going to be taken when they are used. It is important you know when to use which, as the distinction matters:</p>
+
+              <ul>
+                <li>Use a link when you’re navigating to another place, such as: a "view all" page, "Jane Chen" profile, a page "skip link" etc.</li>
+                <li>Use buttons when you are performing an action, such as: "submit," "merge," "create new," "upload," etc.</li>
+                <li>An action is almost always on the same page</li>
+              </ul>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-naked">Naked Buttons</h2>
+
+              <p>Naked buttons have the same spacing and alignment rules as other buttons, however they visually look like normal links. This allows them to be used alongside buttons when a low priority action is required, the element is placed alongside buttons, or when a tap target area should be considered.</p>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary btn-naked">Primary</button>
+                <button type="button" class="btn btn-secondary btn-naked">Secondary</button>
+                <button type="button" class="btn btn-danger btn-naked">Danger</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary btn-naked">Primary</button>
+<button type="button" class="btn btn-secondary btn-naked">Secondary</button>
+<button type="button" class="btn btn-danger btn-naked">Danger</button>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-with-icon">Buttons with Icons</h2>
+
+              <p>Icons should be used within a <code><span>button</span></code> to reinforce the meaning of the buttons action.</p>
+
+              <h3>Left Aligned Icon</h3>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary"><span class="fal fa-download mr-1"></span> Primary</button>
+                <button type="button" class="btn btn-secondary"><span class="fal fa-download mr-1"></span> Secondary</button>
+                <button type="button" class="btn btn-success"><span class="fal fa-download mr-1"></span> Success</button>
+                <button type="button" class="btn btn-danger"><span class="fal fa-download mr-1"></span> Danger</button>
+                <button type="button" class="btn btn-naked"><span class="fal fa-download mr-1"></span> Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary"><span class="fal fa-download mr-1"></span> Primary</button>
+<button type="button" class="btn btn-secondary"><span class="fal fa-download mr-1"></span> Secondary</button>
+<button type="button" class="btn btn-success"><span class="fal fa-download mr-1"></span> Success</button>
+<button type="button" class="btn btn-danger"><span class="fal fa-download mr-1"></span> Danger</button>
+<button type="button" class="btn btn-naked"><span class="fal fa-download mr-1"></span> Naked</button>
+</code></pre>
+</figure>
+
+              <h3 class="mt-5">Right Aligned Icon</h3>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary">Primary <span class="fal fa-download ml-1"></span></button>
+                <button type="button" class="btn btn-secondary">Secondary <span class="fal fa-download icon-right ml-1"></span></button>
+                <button type="button" class="btn btn-success">Success <span class="fal fa-download icon-right ml-1"></span></button>
+                <button type="button" class="btn btn-danger">Danger <span class="fal fa-download icon-right ml-1"></span></button>
+                <button type="button" class="btn btn-naked">Naked <span class="fal fa-download icon-right ml-1"></span></button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary">Primary <span class="fal fa-download ml-1"></span></button>
+<button type="button" class="btn btn-secondary">Secondary <span class="fal fa-download icon-right ml-1"></span></button>
+<button type="button" class="btn btn-success">Success <span class="fal fa-download icon-right ml-1"></span></button>
+<button type="button" class="btn btn-danger">Danger <span class="fal fa-download icon-right ml-1"></span></button>
+<button type="button" class="btn btn-naked">Naked <span class="fal fa-download icon-right ml-1"></span></button>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-disabled">Disabled Buttons</h2>
+
+              <p>Use a disabled attribute when a button can’t be clicked. To create a disabled button, append the <code><span>disabled</span></code> attribute to the button.</p>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary" disabled>Primary</button>
+                <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+                <button type="button" class="btn btn-success" disabled>Success</button>
+                <button type="button" class="btn btn-danger" disabled>Danger</button>
+                <button type="button" class="btn btn-naked" disabled>Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary" disabled>Primary</button>
+<button type="button" class="btn btn-secondary" disabled>Secondary</button>
+<button type="button" class="btn btn-success" disabled>Success</button>
+<button type="button" class="btn btn-danger" disabled>Danger</button>
+<button type="button" class="btn btn-naked" disabled>Naked</button>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-sizes">Button Sizes</h2>
+
+              <p>Buttons can be re-sized depending on the required prominence or usage.</p>
+
+              <h3>Large</h3>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                <button type="button" class="btn btn-success btn-lg">Success</button>
+                <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                <button type="button" class="btn btn-naked btn-lg">Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary btn-lg">Primary</button>
+<button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+<button type="button" class="btn btn-success btn-lg">Success</button>
+<button type="button" class="btn btn-danger btn-lg">Danger</button>
+<button type="button" class="btn btn-naked btn-lg">Naked</button>
+</code></pre>
+</figure>
+
+              <h3 class="mt-5">Small</h3>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+                <button type="button" class="btn btn-success btn-sm">Success</button>
+                <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                <button type="button" class="btn btn-naked btn-sm">Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary btn-sm">Primary</button>
+<button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+<button type="button" class="btn btn-success btn-sm">Success</button>
+<button type="button" class="btn btn-danger btn-sm">Danger</button>
+<button type="button" class="btn btn-naked btn-sm">Naked</button>
+</code></pre>
+</figure>
+
+              <h3 class="mt-5">Full Width</h3>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary btn-block">Primary</button>
+                <button type="button" class="btn btn-secondary btn-block">Secondary</button>
+                <button type="button" class="btn btn-success btn-block">Success</button>
+                <button type="button" class="btn btn-danger btn-block">Danger</button>
+                <button type="button" class="btn btn-naked btn-block">Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary btn-block">Primary</button>
+<button type="button" class="btn btn-secondary btn-block">Secondary</button>
+<button type="button" class="btn btn-success btn-block">Success</button>
+<button type="button" class="btn btn-danger btn-block">Danger</button>
+<button type="button" class="btn btn-naked btn-block">Naked</button>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-dropdown">Dropdown Buttons</h2>
+
+              <p>Dropdown buttons are commonly used as a trigger for navigation or command menus, where an action is initiated based on the selection. To create a dropdwn button, append the <code><span>.dropdown-toggle</span></code> class to the button.</p>
+
+              <div class="mb-5">
+
+                <button type="button" class="btn btn-primary dropdown-toggle">Primary</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle">Secondary</button>
+                <button type="button" class="btn btn-success dropdown-toggle">Success</button>
+                <button type="button" class="btn btn-danger dropdown-toggle">Danger</button>
+                <button type="button" class="btn btn-naked dropdown-toggle">Naked</button>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><button type="button" class="btn btn-primary dropdown-toggle">Primary</button>
+<button type="button" class="btn btn-secondary dropdown-toggle">Secondary</button>
+<button type="button" class="btn btn-success dropdown-toggle">Success</button>
+<button type="button" class="btn btn-danger dropdown-toggle">Danger</button>
+<button type="button" class="btn btn-naked dropdown-toggle">Naked</button>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-dropdown">Split Buttons</h2>
+
+              <p>Combo buttons are preferred when more than one action is associated with a button. The primary action is visible and available on the button itself, while the secondary actions are accessed through the drop-down menu.</p>
+
+              <p>The button's color is based on our button priority. The chosen color should reflect the importance of a user's action relative to other buttons on the page.</p>
+
+              <div class="mb-5">
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">Secondary</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                  
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-naked">Naked</button>
+                  <button type="button" class="btn btn-naked dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="btn-group">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-checkbox-radio">Checkbox / Radio as Button</h2>
+
+              <p>.button styles can be applied to other elements, such as labels, to provide checkbox or radio style button toggling. Add data-toggle="buttons" to a .btn-group containing those modified buttons to enable their toggling behavior via JavaScript and add .btn-group-toggle to style the inputs within your buttons.</p>
+
+              <div class="mb-5">
+
+                <div class="btn-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                    <input type="checkbox" autocomplete="off"> Secondary
+                  </label>
+                </div>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="btn-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary">
+    <input type="checkbox" autocomplete="off"> Secondary
+  </label>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="buttons-group">Button Group</h2>
+
+              <p>Grouped buttons give people access to frequently performed, related actions. Use grouped buttons when there is a close relationship between a number of buttons.</p>
+
+              <div class="mb-5">
+
+                <div class="btn-group" role="group" aria-label="Button Group">
+                  <button type="button" class="btn btn-secondary">Left</button>
+                  <button type="button" class="btn btn-secondary">Middle</button>
+                  <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="btn-group" role="group" aria-label="Button Group">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Sections</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-default">Default Button Styles</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-naked">Naked Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-with-icon">Buttons with Icons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-disabled">Disabled Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-sizes">Button Sizes</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-dropdown">Dropdown Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-checkbox-radio">Checkbox / Radio as Button</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#buttons-group">Button Group</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,167 @@
+// Inline code
+code {
+    @include font-size($code-font-size);
+    word-break: break-word;
+  
+    // Streamline the style when inside anchors to avoid broken underline and more
+    a > & {
+      color: inherit;
+    }
+  }
+  
+  // User input typically entered via keyboard
+  kbd {
+    padding: $kbd-padding-y $kbd-padding-x;
+    @include font-size($kbd-font-size);
+    color: $kbd-color;
+    background-color: $kbd-bg;
+    @include border-radius($border-radius-sm);
+    @include box-shadow($kbd-box-shadow);
+  
+    kbd {
+      padding: 0;
+      @include font-size(100%);
+      font-weight: $nested-kbd-font-weight;
+      @include box-shadow(none);
+    }
+  }
+  
+  // Blocks of code
+  pre {
+    display: block;
+    @include font-size($code-font-size);
+    word-wrap:break-word;
+    position:relative
+  }
+
+  code {
+    @include font-size(inherit);
+    color: inherit;
+    word-break: normal;
+    span.attr-tag {
+      color: $red;
+    }
+    span.attr-punctuation {
+      color: $slate;
+    }
+    span.attr-name {
+      color: $green;
+    }
+    span.attr-value {
+      color: $blue;
+    }
+}
+  
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: $pre-scrollable-max-height;
+  overflow-y: scroll;
+}
+
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+@keyframes fade{10%{transform:scale(1, 1)}35%{transform:scale(1, 1.7)}40%{transform:scale(1, 1.7)}50%{opacity:1}60%{transform:scale(1, 1)}100%{transform:scale(1, 1);opacity:0}}
+
+[data-language] code,
+[class^="lang"] code,
+pre [data-language],
+pre [class^="lang"]{
+  opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  animation:fade-in 50ms ease-in-out 2s forwards
+}
+
+[data-language] code.rainbow,
+[class^="lang"] code.rainbow,
+pre [data-language].rainbow,pre [class^="lang"].rainbow{
+  animation:none;
+  transition:opacity 50ms ease-in-out
+}
+
+[data-language] code.loading,
+[class^="lang"] code.loading,
+pre [data-language].loading,
+pre [class^="lang"].loading{
+  animation:none
+}
+
+[data-language] code.rainbow-show,[class^="lang"] code.rainbow-show,
+pre [data-language].rainbow-show,
+pre [class^="lang"].rainbow-show{
+  opacity:1
+}
+
+pre,
+code {
+  font-family:Consolas, 'Liberation Mono', Courier, monospace;
+}
+
+pre,
+pre code {
+  font-size: $font-size-smallest;
+}
+
+pre .comment {
+  color:#998
+}
+
+pre .support {
+  color:#0086B3
+}
+
+pre .tag,
+pre .tag-name {
+  float: none;
+  color:navy
+}
+
+pre .keyword,
+pre .css-property,
+pre .vendor-fix,
+pre .sass,
+pre .class,
+pre .id,
+pre .css-value,pre .entity.function,pre .storage.function {
+  font-weight: $font-weight-bold
+}
+
+pre .css-property,
+pre .css-value,
+pre .vendor-fix,
+pre .support.namespace {
+  color:#333
+}
+
+pre .constant.numeric,
+pre .keyword.unit,
+pre .hex-color {
+  font-weight: $font-weight-normal;
+  color:#099
+}
+
+pre .entity.class {
+  color:#458
+}
+
+pre .entity.id,
+pre .entity.function {
+  color:#900
+}
+
+pre .attribute,
+pre .variable {
+  color:teal
+}
+
+pre .string,pre .support.value {
+  font-weight: $font-weight-normal;
+  color:#d14
+}
+
+pre .regexp {
+  color:#009926
+}
+
+p code span {
+  color: $red;
+  font-family: $font-family-base;
+}

@@ -1,0 +1,14 @@
+.close {
+    float: right;
+    line-height: 1;
+    color: $black;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

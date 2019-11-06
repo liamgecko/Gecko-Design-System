@@ -1,0 +1,166 @@
+.table {
+    width: 100%;
+    color: $table-color;
+    background-color: $table-bg;
+  
+    th,
+    td {
+      padding: $table-cell-padding;
+      vertical-align: middle;
+      border: $table-border-width solid $table-border-color;
+    }
+  
+    thead th {
+      vertical-align: bottom;
+      font-size: $font-size-smaller;
+    }
+
+    .dropdown-toggle {
+      &:after {
+        display: none;
+      }
+    }
+
+    .cell-fixed {
+      table-layout: fixed;
+    }
+
+    .cell-select {
+      font-size: $font-size-base;
+      width: 46px;
+    }
+
+    .cell-actions {
+      width: 84px;
+      text-align: center;
+    }
+
+    .cell-attendees {
+      width: 124px;
+    }
+
+    .column-sort {
+      display: none;
+      margin-top: 4px;
+      cursor: pointer;
+    }
+
+    th:hover .column-sort {
+      display: block;
+    }
+  }
+  
+  .table-sm {
+    th,
+    td {
+      padding: $table-cell-padding-sm;
+    }
+  }
+  
+  .table-bordered {
+    border: $table-border-width solid $table-border-color;
+  
+    th,
+    td {
+      border: $table-border-width solid $table-border-color;
+    }
+  }
+  
+  .table-borderless {
+    th,
+    td,
+    thead th,
+    tbody + tbody {
+      border: 0;
+    }
+  }
+  
+  .table-striped {
+    tbody tr:nth-of-type(#{$table-striped-order}),
+    thead tr {
+      background-color: $table-accent-bg;
+    }
+  }
+  
+  .table-hover {
+    tbody tr {
+      @include hover {
+        color: $table-hover-color;
+        background-color: $table-hover-bg;
+      }
+    }
+  }
+
+  .table {
+    .thead-dark {
+      > tr > th {
+        background-color: $table-dark-bg;
+      }
+    }
+  
+    .thead-light {
+      > tr {
+        background-color: $table-head-bg;
+      }
+    }
+  }
+  
+  .table-dark {
+    color: $table-dark-color;
+    background-color: $table-dark-bg;
+  
+    th,
+    td,
+    thead th {
+      border-color: $table-dark-border-color;
+    }
+  
+    &.table-bordered {
+      border: 0;
+    }
+  
+    &.table-striped {
+      tbody tr:nth-of-type(odd) {
+        background-color: $table-dark-accent-bg;
+      }
+    }
+  
+    &.table-hover {
+      tbody tr {
+        @include hover {
+          color: $table-dark-hover-color;
+          background-color: $table-dark-hover-bg;
+        }
+      }
+    }
+  }
+
+  .table-responsive {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+  
+      &#{$infix} {
+        @include media-breakpoint-down($breakpoint) {
+          display: block;
+          width: 100%;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+  
+          > .table-bordered {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .table-data {
+    th,
+    td {
+      border: none;
+    }
+    tbody tr td {
+      border-bottom: $table-border-width solid $table-border-color;
+    }
+  }

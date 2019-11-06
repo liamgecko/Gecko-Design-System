@@ -1,0 +1,722 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Forms</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="form-control">Form Controls</h2>
+
+              <p>The .form-group class is the easiest way to add some structure to forms. It provides a flexible class that encourages proper grouping of labels, controls, optional help text, and form validation messaging. By default it only applies margin-bottom, but it picks up additional styles in .form-inline as needed. Use it with fieldsets, divs, or nearly any other element.</p>
+
+              <p>Textual form controls—like inputs, selects, and textareas—are styled with the .form-control class. Included are styles for general appearance, focus state, sizing, and more.</p>
+
+              <h3>Example</h3>
+
+              <form class="mb-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+    <label for="...">Email address</label>
+    <input type="email" class="form-control" id="..." aria-describedby="..." placeholder="...">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</code></pre>
+</figure>
+
+              <p>For file inputs, swap the .form-control for .form-control-file.</p>
+
+              <form>
+                <div class="form-group btn-file">
+                  <label class="btn btn-secondary" for="file-upload"><span class="far fa-upload mr-1"></span>Example file input</label>
+                  <input type="file" class="form-control-file" name="file-upload" id="file-upload">
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group btn-file">
+    <label class="btn btn-secondary" for="file-upload"><span class="far fa-upload mr-1"></span>Example file input</label>
+    <input type="file" class="form-control-file" name="file-upload" id="...">
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-fields">Form Fields</h2>
+
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Input Field</label>
+                  <input class="form-control" type="text" placeholder="Default input">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Text Area</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+    <label for="...">Input Field</label>
+    <input class="form-control" type="text" placeholder="Default input">
+  </div>
+  <div class="form-group">
+    <label for="...">Text Area</label>
+    <textarea class="form-control" id="..." rows="6"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="...">Select</label>
+    <select class="form-control" id="...">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-checkbox-radio">Checkboxes and Radio Buttons</h2>
+
+              <p>Default checkboxes and radios are improved upon with the help of .form-check, a single class for both input types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+
+              <h3>Stacked</h3>
+
+              <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with .form-check.</p>
+
+              <form class="mb-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Checkbox option one
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                      Checkbox option two
+                  </label>
+                </div>
+              </form>
+
+              <form class="mb-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">
+                    Radio option one
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Radio option two
+                  </label>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="...">
+    <label class="form-check-label" for="...">
+      Checkbox option one
+    </label>
+  </div>
+</form>
+
+<form>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="..." id="..." value="...">
+    <label class="form-check-label" for="...">
+      Radio option one
+    </label>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+              <h3>Inline</h3>
+
+              <p>Group checkboxes or radios on the same horizontal row by adding .form-check-inline to any .form-check.</p>
+
+              <form class="mb-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Checkbox option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                      Checkbox option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                      Checkbox option three
+                  </label>
+                </div>
+              </form>
+
+              <form class="mb-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">
+                    Radio option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Radio option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Radio option three
+                  </label>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" value="..." id="...">
+    <label class="form-check-label" for="...">
+      Checkbox option one
+    </label>
+  </div>
+</form>
+
+<form>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="..." id="..." value="...">
+    <label class="form-check-label" for="...">
+      Radio option one
+    </label>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+              <h3>Checkbox and radio as buttons</h3>
+
+              <p>Checkboxes and radio buttons can be styled to operate as buttons, these are typically displayed inline with the .form-check-inline class. To add the button styling add a .form-check-btn class to each input.</p>
+
+              <form class="mb-5">
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn1" value="option1" checked>
+                  <label class="form-check-label p-2 rounded" for="exampleCheckboxBtn1">
+                    Checkbox option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn2" value="option2">
+                  <label class="form-check-label p-2 rounded" for="exampleCheckboxBtn2">
+                    Checkbox option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn3" value="option3">
+                  <label class="form-check-label p-2 rounded" for="exampleCheckboxBtn3">
+                    Checkbox option three
+                  </label>
+                </div>
+              </form>
+
+              <form>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn1" value="option1" checked>
+                  <label class="form-check-label p-2 rounded" for="exampleRadiosBtn1">
+                    Radio option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn2" value="option2">
+                  <label class="form-check-label p-2 rounded" for="exampleRadiosBtn2">
+                    Radio option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn3" value="option3">
+                  <label class="form-check-label p-2 rounded" for="exampleRadiosBtn3">
+                    Radio option three
+                  </label>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-check form-check-inline form-check-btn">
+    <input class="form-check-input" type="checkbox" name="..." id="..." value="...">
+    <label class="form-check-label p-2 rounded" for="...">
+      Checkbox option one
+    </label>
+  </div>
+</form>
+
+<form>
+  <div class="form-check form-check-inline form-check-btn">
+    <input class="form-check-input" type="radio" name="..." id="..." value="...">
+    <label class="form-check-label p-2 rounded" for="...">
+      Radio option one
+    </label>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-help-text">Help Text</h2>
+
+              <p>Help text below inputs can be styled with .form-text. This class includes display: block and adds some bottom margin for easy spacing from the inputs above.</p>
+
+              <form>
+                <div class="form-group">
+                  <label>Input Field</label>
+                  <small class="form-text text-muted">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </small>
+                  <input class="form-control" type="text" placeholder="Default input">
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+    <label>Input Field</label>
+    <small class="form-text text-muted">
+      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    </small>
+    <input class="form-control" type="text" placeholder="Default input">
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-disabled">Disabled</h2>
+
+              <p>Add the disabled boolean attribute on an input to prevent user interactions.</p>
+
+              <form class="mb-5">
+                <div class="form-group">
+                    <label for="disabledInput">Disabled input</label>
+                  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+      <label for="...">Disabled input</label>
+    <input class="form-control" id="..." type="text" placeholder="Disabled input here..." disabled>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+              <p>Add the disabled attribute to a fieldset element to disable all the controls within.</p>
+
+              <form>
+                <fieldset disabled>
+                  <div class="form-group">
+                    <label for="disabledTextInput">Disabled input</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                  </div>
+                  <div class="form-group">
+                    <label for="disabledSelect">Disabled select menu</label>
+                    <select id="disabledSelect" class="form-control">
+                      <option>Disabled select</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                      <label class="form-check-label" for="disabledFieldsetCheck">
+                        Can't check this
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="...">Disabled input</label>
+      <input type="text" id="..." class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="...">Disabled select menu</label>
+      <select id="..." class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="..." disabled>
+        <label class="form-check-label" for="...">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-sizing">Sizing</h2>
+
+              <p>Set heights using classes like .form-control-lg and .form-control-sm.</p>
+
+              <form>
+                <div class="form-group">
+                  <input class="form-control form-control-lg" type="text" placeholder="Large Input">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Default input">
+                </div>
+                <div class="form-group">
+                  <input class="form-control form-control-sm" type="text" placeholder="Small Input">
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+    <input class="form-control form-control-lg" type="text" placeholder="Large input">
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="text" placeholder="Default input">
+  </div>
+  <div class="form-group">
+    <input class="form-control form-control-sm" type="text" placeholder="Small input">
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-layout">Layout</h2>
+
+              <p>By default form elements are stacked horizontally. More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.</p>
+              
+              <p>Use .form-row instead of .row for tighter alignment of form fields.</p>
+
+              <form>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <label>First name</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="form-group col">
+                    <label>Last name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" class="form-control" placeholder="1234 Main St">
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-row">
+    <div class="form-group col">
+      <label>First name</label>
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="form-group col">
+      <label>Last name</label>
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <input type="text" class="form-control" placeholder="1234 Main St">
+  </div>
+</form>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="form-validation">Validation</h2>
+
+              <h3>Inline validation</h3>
+
+              <form class="mb-3">
+                <div class="form-group">
+                  <label for="">Valid Field</label>
+                  <div class="input-with-icon position-relative">
+                    <input class="form-control is-valid" type="text" placeholder="Valid input">
+                    <span class="validation-icon position-absolute color-green-text far fa-check-square" data-toggle="tooltip" data-placement="bottom" title="Positive feedback"></span>
+                  </div>
+                </div>
+              </form>
+
+              <form class="mb-3">
+                <div class="form-group">
+                  <label for="">Invalid Field</label>
+                  <div class="input-with-icon position-relative">
+                    <input class="form-control is-invalid" type="text" placeholder="Invalid input">
+                    <span class="validation-icon position-absolute color-red-text far fa-times-square" data-toggle="tooltip" data-placement="bottom" title="Error feedback"></span>
+                  </div>
+                </div>
+              </form>
+
+              <form class="mb-5">
+                <div class="form-group">
+                  <label for="">Warning Field</label>
+                  <div class="input-with-icon position-relative">
+                    <input class="form-control is-warning" type="text" placeholder="Warning input">
+                    <span class="validation-icon position-absolute color-orange-text far fa-exclamation-triangle" data-toggle="tooltip" data-placement="bottom" title="Warning feedback"></span>
+                  </div>
+                </div>
+              </form>
+
+              <h3>Stacked validation</h3>
+
+              <form class="mb-3">
+                <div class="form-group">
+                  <label for="">Valid Field</label>
+                  <input class="form-control is-valid" type="text" placeholder="Valid input">
+                  <div class="validation-message color-green-text font-size-smaller mt-1"><span class="validation-icon far fa-check-square"></span> This is a positive validation message</div>
+                </div>
+              </form>
+
+              <form class="mb-3">
+                <div class="form-group">
+                  <label for="">Invalid Field</label>
+                  <input class="form-control is-invalid" type="text" placeholder="Invalid input">
+                  <div class="validation-message color-red-text font-size-smaller mt-1"><span class="validation-icon far fa-times-square"></span> This is a error validation message</div>
+                </div>
+              </form>
+
+              <form class="mb-3">
+                <div class="form-group">
+                  <label for="">Warning Field</label>
+                  <input class="form-control is-warning" type="text" placeholder="Warning input">
+                  <div class="validation-message color-orange-text font-size-smaller mt-1"><span class="validation-icon far fa-exclamation-triangle"></span> This is a warning validation message</div>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-group">
+    <label for="">Valid Field</label>
+    <div class="input-with-icon position-relative">
+      <input class="form-control is-valid" type="text" placeholder="Valid input">
+      <span class="validation-icon position-absolute color-green-text far fa-check" data-toggle="tooltip" data-placement="bottom" title="Positive feedback"></span>
+    </div>
+  </div>
+</form>
+
+<form>
+  <div class="form-group">
+    <label for="">Invalid Field</label>
+    <div class="input-with-icon position-relative">
+      <input class="form-control is-invalid" type="text" placeholder="Invalid input">
+      <span class="validation-icon position-absolute color-red-text far fa-times-square" data-toggle="tooltip" data-placement="bottom" title="Error feedback"></span>
+    </div>
+  </div>
+</form>
+
+<form>
+  <div class="form-group">
+    <label for="">Warning Field</label>
+    <div class="input-with-icon position-relative">
+      <input class="form-control is-warning" type="text" placeholder="Warning input">
+      <span class="validation-icon position-absolute color-orange-text far fa-exclamation-triangle" data-toggle="tooltip" data-placement="bottom" title="Warning feedback"></span>
+    </div>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Sections</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-control">Form Control</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-fields">Form Fields</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-checkbox-radio">Checkboxes and Radio Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-help-text">Help Text</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-disabled">Disabled</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-sizing">Sizing</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-layout">Layout</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-validation">Validation</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js" ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

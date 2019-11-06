@@ -1,0 +1,727 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Table</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="table-standard">Standard Table</h2>
+
+              <p>To ensure consistency with tables add the base class .table to any table, then extend with custom styles or our various included modifier classes.</p>
+
+              <p>All tables should also be wrapped in a .table-responsive div to ensure tables remain fully responsive.</p>
+
+              <div class="table-responsive">
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First</th>
+                      <th>Last</th>
+                      <th>Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>...</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="table-striped">Striped Table</h2>
+
+              <p>Use .table-striped to add zebra-striping to any table row.</p>
+
+              <div class="table-responsive">
+
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First</th>
+                      <th>Last</th>
+                      <th>Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>...</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="table-data">Data Table</h2>
+
+              <p>Use .table-data to any table that is data driven such as Events, Forms etc.</p>
+
+              <p>Columns which do not contain fluid data, such as checkboxes and buttons, should be fixed with and cells appended with a .cell-fixed class.</p>
+
+              <div class="table-responsive">
+
+                <table class="table table-data">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="cell-select cell-fixed">
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </th>
+                      <th>Title <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Start date <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Timezone <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th class="cell-attendees cell-fixed">Attendees <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th class="cell-actions cell-fixed">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title One</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Two</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Three</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Four</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Five</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Six</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="table-responsive">
+  <table class="table table-data">
+    <thead class="thead-dark">
+      <tr>
+        <th>Title <span class="column-sort fas fa-sort float-right font-size-smallest" aria-hidden="true"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="table-pagination">Pagination</h2>
+
+              <p>The number of rows displayed should be 10 by default. If a table has more than 10 then pagination should be used.</p>
+
+              <div class="table-responsive">
+
+                <table class="table table-data">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="cell-select cell-fixed">
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </th>
+                      <th>Title <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Start date <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Timezone <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th class="cell-attendees cell-fixed">Attendees <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th class="cell-actions cell-fixed">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title One</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Two</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Three</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Four</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Five</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>12</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td>Event Title Six</td>
+                      <td>1st September 2019</td>
+                      <td>Europe/London</td>
+                      <td>123</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <div class="pagination-container d-flex justify-content-between mt-3">
+
+                <nav aria-label="display-number">
+                  <ul class="pagination-showing m-0">
+                    <li><span class="font-weight-medium">View:</span></li>
+                    <li class="active"><a class="" href="#">10</a></li>
+                    <li><a href="#">25</a></li>
+                    <li><a href="#">50</a></li>
+                  </ul>
+                </nav>
+
+                <nav aria-label="pagination">
+                  <ul class="pagination m-0">
+                    <li class="d-flex align-items-center font-size-smaller mr-2">
+                      <span>Showing results 1 - 10 of 100</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="far fa-angle-left"></span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="far fa-angle-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="table-responsive">
+  <table class="table table-data">
+    <thead class="thead-dark">
+      <tr>
+        <th>...</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="pagination-container d-flex justify-content-between mt-3">
+  <nav aria-label="display-number">
+    <ul class="pagination-showing m-0">
+      <li><span class="font-weight-medium">View:</span></li>
+      <li class="active"><a class="" href="#">10</a></li>
+      <li><a href="#">25</a></li>
+      <li><a href="#">50</a></li>
+    </ul>
+  </nav>
+  <nav aria-label="pagination">
+    <ul class="pagination m-0">
+      <li class="d-flex align-items-center font-size-smaller mr-2">
+        <span>Showing results 1 - 10 of 100</span>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true" class="far fa-angle-left"></span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true" class="far fa-angle-right"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section>
+
+              <h2 id="table-helper-classes">Helper Classes</h2>
+
+              <p>Each column should contain a helper class. Below is a list of all current columns.</p>
+
+              <div class="table-responsive">
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Column type</th>
+                      <th>Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Checkbox/select</td>
+                      <td>cell-select</td>
+                    </tr>
+                    <tr>
+                      <td>Attendees</td>
+                      <td>cell-attendees</td>
+                    </tr>
+                    <tr>
+                      <td>Actions</td>
+                      <td>cell-actions</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </section>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Helper Classes</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#table-standard">Standard Table</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#table-striped">Striped Table</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#table-data">Data Table</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#table-pagination">Data Table with Pagination</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#table-helper-classes">Helper Classes</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

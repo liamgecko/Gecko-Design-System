@@ -1,0 +1,401 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Avatars</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="avatar-base">Base Avatar</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="avatar avatar-example position-relative mb-4" style="width: 200px;">
+                <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+              </div>
+
+              <ol class="mb-5">
+                <li>Avatar image</li>
+                <li>Notification indicator top left</li>
+                <li>Status indicator bottom right</li>
+              </ol>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="avatar position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="avatar-sizes">Size Variations</h2>
+
+              <div class="mb-5">
+
+                <h3>X-Large</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="avatar avatar-xl position-relative">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+              </div>
+
+              <div class="mb-5">
+
+                <h3>Large</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="avatar avatar-lg position-relative">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar avatar-lg position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+              </div>
+
+              <div class="mb-5">
+
+                <h3>Medium</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="avatar avatar-md position-relative">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar avatar-md position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+              </div>
+
+              <div class="mb-5">
+
+                <h3>Small</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="avatar avatar-sm position-relative">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar avatar-sm position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+              </div>
+
+              <div class="mb-5">
+
+                <h3>X-Small</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="avatar avatar-xs position-relative">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar avatar-xs position-relative">
+  <img class="rounded-circle img-fluid" src="..." />
+</div>
+</code></pre>
+</figure>
+
+              </div>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="avatar-base">Avatar with Name</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="avatar-with-title d-flex align-items-center mb-5">
+                <div class="avatar avatar-md position-relative mr-1">
+                  <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                </div>
+                <span class="font-weight-medium">Liam Young</span>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="avatar-with-title d-flex align-items-center">
+  <div class="avatar avatar-md position-relative mr-1">
+    <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+  </div>
+  <span class="font-weight-medium">Liam Young</span>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="avatar-base">Avatar Group</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="avatar-group mb-5">
+                <div class="avatar avatar-md position-relative">
+                  <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="Liam Young">
+                    <img class="avatar-img rounded-circle img-fluid" src="../img/avatar.jpg" />
+                  </div>
+                </div>
+                <div class="avatar avatar-md position-relative">
+                  <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="Liam Young">
+                    <img class="avatar-img rounded-circle img-fluid" src="../img/avatar.jpg" />
+                  </div>
+                </div>
+                <div class="avatar avatar-md position-relative">
+                  <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="Liam Young">
+                    <img class="avatar-img rounded-circle img-fluid" src="../img/avatar.jpg" />
+                  </div>
+                </div>
+                <div class="avatar avatar-md position-relative">
+                  <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="Liam Young">
+                    <img class="avatar-img rounded-circle img-fluid" src="../img/avatar.jpg" />
+                  </div>
+                </div>
+                <div class="avatar avatar-md position-relative">
+                  <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="Liam Young">
+                    <img class="avatar-img rounded-circle img-fluid" src="../img/avatar.jpg" />
+                  </div>
+                </div>
+                <div class="avatar avatar-md avatar-initials position-relative">
+                  <div class="avatar-dropdown dropdown">
+                    <span title="Liam Young" class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle justify-content-center align-items-center" data-toggle="dropdown">+4</span>
+                    <div class="dropdown-menu shadow-sm rounded p-2">
+                      <div class="dropdown-item avatar-with-title d-flex align-items-center">
+                        <div class="avatar avatar-sm position-relative mr-1">
+                          <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                        </div>
+                        <span class="font-size-smaller font-weight-medium">Liam Young</span>
+                      </div>
+                      <div class="dropdown-item avatar-with-title d-flex align-items-center">
+                        <div class="avatar avatar-sm position-relative mr-1">
+                          <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                        </div>
+                        <span class="font-size-smaller font-weight-medium">Liam Young</span>
+                      </div>
+                      <div class="dropdown-item avatar-with-title d-flex align-items-center">
+                        <div class="avatar avatar-sm position-relative mr-1">
+                          <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                        </div>
+                        <span class="font-size-smaller font-weight-medium">Liam Young</span>
+                      </div>
+                      <div class="dropdown-item avatar-with-title d-flex align-items-center">
+                        <div class="avatar avatar-sm position-relative mr-1">
+                          <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+                        </div>
+                        <span class="font-size-smaller font-weight-medium">Liam Young</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight">
+<pre><code data-language="html"><div class="avatar-with-title d-flex align-items-center">
+  <div class="avatar avatar-md position-relative mr-1">
+    <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+  </div>
+  <span class="font-weight-medium">Liam Young</span>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="avatar-fallback">Fallback</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="avatar avatar-md avatar-initials position-relative mb-4">
+                <span title="Liam Young" class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle bg-lime justify-content-center align-items-center">LY</span>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mt-5">
+<pre><code data-language="html"><div class="avatar avatar-md avatar-initials position-relative">
+  <span title="Liam Young" class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle bg-lime">LY</span>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="avatar-status">Statuses</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <ul class="list-inline">
+                <li style="width: 25%;">
+                  <span class="font-weight-bold" style="display: block; text-align: center; margin-bottom: 5px;">Online</span>
+                  <span class="rounded-circle bg-lime" style="display: block; margin: 0 auto; height: 36px; width: 36px;"></span>
+                </li>
+                <li style="width: 25%;">
+                  <span class="font-weight-bold" style="display: block; text-align: center; margin-bottom: 5px;">Offline</span>
+                  <span class="rounded-circle bg-grey-lighten-4" style="display: block; margin: 0 auto; height: 36px; width: 36px;"></span>
+                </li>
+                <li style="width: 25%;">
+                  <span class="font-weight-bold" style="display: block; text-align: center; margin-bottom: 5px;">Notification</span>
+                  <span class="rounded-circle bg-red" style="display: block; margin: 0 auto; height: 36px; width: 36px;"></span>
+                </li>
+              </ul>
+
+            </section>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Sections</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#avatar-base">Base Avatar</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#avatar-sizes">Size Variations</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#avatar-fallback">Fallback</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#avatar-status">Statuses</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

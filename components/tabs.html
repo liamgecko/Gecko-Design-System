@@ -1,0 +1,435 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gecko Engage Design System</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6a3bfb092.js"></script>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+  </head>
+
+  <body class="body-grid">
+
+    <div class="sidebar">
+
+      <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
+        <div class="logo-container">
+          <img src="../img/gecko-styles.svg" style="width: 142px;">
+        </div>
+      </div>
+
+      <div class="sidebar-body position-relative">
+
+        <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+        </ul>
+
+        <div class="nav-container">
+
+          <div class="nav-container-inner p-3">
+
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <ul class="list-unstyled m-0">
+              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
+              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
+              <li><a class="link-light pb-1 mb-1" href="carousel.html">Carousel</a></li>
+              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
+              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
+              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
+              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
+              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
+              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
+              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
+              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
+              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
+              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
+              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content position-relative">
+
+      <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
+        <div class="main-heading">
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Tabs</span>
+        </div>
+      </div>
+
+      <div class="content-body p-4 bg-ice">
+
+        <div class="content-body-inner row no-gutters p-4 bg-white">
+
+          <div class="content-body-container col-9 pr-4">
+
+            <section class="mb-5">
+
+              <h2 id="tabs-overview">Overview</h2>
+
+              <p>The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="tabs-horizontal">Horiztonal Tabs</h2>
+
+              <h3>Default Tabs</h3>
+
+              <p>Horiztonal tabs are used most frequently throughout the products and should be treated as the default tab navigation.</p>
+
+              <article class="card shadow-sm rounded bg-white mb-5">
+                <div class="card-body p-3">
+                  <ul class="horizontal-tabs nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2 active" id="home-tab" data-toggle="tab" href="#horizontal-tab-one" role="tab" aria-controls="horizontal-tab-one" aria-selected="true">Tab One</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2" id="profile-tab" data-toggle="tab" href="#horizontal-tab-two" role="tab" aria-controls="horizontal-tab-two" aria-selected="false">Tab Two</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2" id="contact-tab" data-toggle="tab" href="#horizontal-tab-three" role="tab" aria-controls="horizontal-tab-three" aria-selected="false">Tab Three</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-4" id="horizontal-tabs-content">
+                    <div class="tab-pane fade show active" id="horizontal-tab-one" role="tabpanel" aria-labelledby="home-tab">
+                      <h4>Tab One</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="tab-pane fade" id="horizontal-tab-two" role="tabpanel" aria-labelledby="profile-tab">
+                      <h4>Tab Two</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="tab-pane fade" id="horizontal-tab-three" role="tabpanel" aria-labelledby="contact-tab">
+                      <h4>Tab Three</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><ul class="horizontal-tabs nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link position-relative pb-2 px-2" id="..." data-toggle="tab" href="..." role="tab" aria-controls="..." aria-selected="true">...</a>
+  </li>
+</ul>
+<div class="tab-content pt-4" id="...">
+  <div class="tab-pane fade" id="..." role="tabpanel" aria-labelledby="...">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>With Overflow</h3>
+
+              <p>The overflow tab style is provided as a tab item type that acts as a menu component and appears as a tab item. It could contain those tab items that don't all fit in a horizontal orientation.</p>
+
+              <article class="card shadow-sm rounded bg-white mb-5">
+                <div class="card-body p-3">
+                  <ul class="horizontal-tabs nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2 active" id="home-tab" data-toggle="tab" href="#horizontal-tab-one" role="tab" aria-controls="horizontal-tab-one" aria-selected="true">Tab One</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2" id="profile-tab" data-toggle="tab" href="#horizontal-tab-two" role="tab" aria-controls="horizontal-tab-two" aria-selected="false">Tab Two</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative pb-2 px-2" id="contact-tab" data-toggle="tab" href="#horizontal-tab-three" role="tab" aria-controls="horizontal-tab-three" aria-selected="false">Tab Three</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle position-relative pb-2 px-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                      <div class="dropdown-menu shadow-sm rounded p-2">
+                        <a class="dropdown-item" href="#">Overflow Tab One</a>
+                        <a class="dropdown-item" href="#">Overflow Tab Two</a>
+                        <a class="dropdown-item" href="#">Overflow Tab Three</a>
+                        <a class="dropdown-item" href="#">Overflow Tab Four</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-4" id="horizontal-tabs-content">
+                    <div class="tab-pane fade show active" id="horizontal-tab-one" role="tabpanel" aria-labelledby="home-tab">
+                      <h4>Tab One</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="tab-pane fade" id="horizontal-tab-two" role="tabpanel" aria-labelledby="profile-tab">
+                      <h4>Tab Two</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="tab-pane fade" id="horizontal-tab-three" role="tabpanel" aria-labelledby="contact-tab">
+                      <h4>Tab Three</h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><ul class="horizontal-tabs nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link position-relative pb-2 px-2" id="..." data-toggle="tab" href="..." role="tab" aria-controls="..." aria-selected="true">...</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle position-relative pb-2 px-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">...</a>
+    <div class="dropdown-menu shadow-sm rounded p-2">
+      <a class="dropdown-item" href="#">...</a>
+      <a class="dropdown-item" href="#">...</a>
+    </div>
+  </li>
+</ul>
+<div class="tab-content pt-4" id="...">
+  <div class="tab-pane fade" id="..." role="tabpanel" aria-labelledby="...">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Scrollable Tabs</h3>
+
+              <p>In some situations there will be more tabs than the screen real estate can accommodate. Instead of simply using a dropdown we offer the ability to scroll along the tabs themselves.</p>
+
+              <div class="row">
+
+                <div class="col-sm-4">
+
+                  <article class="card shadow-sm rounded bg-white mb-5">
+                    <div class="card-body p-3">
+                      <ul class="horizontal-tabs scrollable-tabs nav nav-tabs position-relative" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link position-relative pb-2 px-2 active" id="home-tab" data-toggle="tab" href="#scrollable-tab-one" role="tab" aria-controls="scrollable-tab-one" aria-selected="true">Tab One</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative pb-2 px-2" id="profile-tab" data-toggle="tab" href="#scrollable-tab-two" role="tab" aria-controls="scrollable-tab-two" aria-selected="false">Tab Two</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative pb-2 px-2" id="contact-tab" data-toggle="tab" href="#scrollable-tab-three" role="tab" aria-controls="scrollable-tab-three" aria-selected="false">Tab Three</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative pb-2 px-2" id="contact-tab" data-toggle="tab" href="#scrollable-tab-four" role="tab" aria-controls="scrollable-tab-four" aria-selected="false">Tab Four</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative pb-2 px-2" id="contact-tab" data-toggle="tab" href="#scrollable-tab-five" role="tab" aria-controls="scrollable-tab-five" aria-selected="false">Tab Five</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content pt-4" id="scrollable-tabs-content">
+                        <div class="tab-pane fade show active" id="scrollable-tab-one" role="tabpanel" aria-labelledby="home-tab">
+                          <h4>Tab One</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="scrollable-tab-two" role="tabpanel" aria-labelledby="profile-tab">
+                          <h4>Tab Two</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="scrollable-tab-three" role="tabpanel" aria-labelledby="contact-tab">
+                          <h4>Tab Three</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="scrollable-tab-four" role="tabpanel" aria-labelledby="profile-tab">
+                          <h4>Tab Four</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="scrollable-tab-five" role="tabpanel" aria-labelledby="contact-tab">
+                          <h4>Tab Five</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><ul class="horizontal-tabs scrollable-tabs nav nav-tabs position-relative" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link position-relative pb-2 px-2" id="..." data-toggle="tab" href="..." role="tab" aria-controls="..." aria-selected="true">...</a>
+  </li>
+</ul>
+<div class="tab-content pt-4" id="scrollable-tabs-content">
+  <div class="tab-pane fade" id="..." role="tabpanel" aria-labelledby="...">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="tabs-vertical">Vertical Tabs</h2>
+
+              <p>Horiztonal tabs are used most frequently throughout the products and should be treated as the default tab navigation.</p>
+
+              <article class="card shadow-sm rounded bg-white">
+                <div class="card-body p-3">
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="vertical-tabs nav nav-tabs flex-column" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link position-relative py-2 px-2 active" id="home-tab" data-toggle="tab" href="#vertical-tab-one" role="tab" aria-controls="vertical-tab-one" aria-selected="true">Tab One</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative py-2 px-2" id="profile-tab" data-toggle="tab" href="#vertical-tab-two" role="tab" aria-controls="vertical-tab-two" aria-selected="false">Tab Two</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link position-relative py-2 px-2" id="contact-tab" data-toggle="tab" href="#vertical-tab-three" role="tab" aria-controls="vertical-tab-three" aria-selected="false">Tab Three</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-9">
+                      <div class="tab-content" id="vertical-tabs-content">
+                        <div class="tab-pane fade show active" id="vertical-tab-one" role="tabpanel" aria-labelledby="home-tab">
+                          <h4>Tab One</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="vertical-tab-two" role="tabpanel" aria-labelledby="profile-tab">
+                          <h4>Tab Two</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="vertical-tab-three" role="tabpanel" aria-labelledby="contact-tab">
+                          <h4>Tab Three</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="row">
+  <div class="col-3">
+    <ul class="vertical-tabs nav nav-tabs flex-column" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link position-relative py-2 px-2" id="..." data-toggle="tab" href="..." role="tab" aria-controls="..." aria-selected="true">...</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="...">
+      <div class="tab-pane fade" id="..." role="tabpanel" aria-labelledby="...">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="tabs-content">Content Tabs</h2>
+
+              <p>Horiztonal tabs are used most frequently throughout the products and should be treated as the default tab navigation.</p>
+
+              <article class="card shadow-sm rounded bg-white mb-5">
+                <div class="card-body p-3">
+                  <div class="content-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link position-relative px-3 active" id="home-tab" data-toggle="tab" href="#content-tab-one" role="tab" aria-controls="content-tab-one" aria-selected="true">Tab One</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link position-relative px-3" id="profile-tab" data-toggle="tab" href="#content-tab-two" role="tab" aria-controls="content-tab-two" aria-selected="false">Tab Two</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content bg-fog p-3" id="content-tabs-content">
+                      <div class="tab-pane fade show active" id="content-tab-one" role="tabpanel" aria-labelledby="home-tab">
+                        <h4>Tab One</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                      <div class="tab-pane fade" id="content-tab-two" role="tabpanel" aria-labelledby="profile-tab">
+                        <h4>Tab Two</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="content-tabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link position-relative px-3" id="..." data-toggle="tab" href="..." role="tab" aria-controls="..." aria-selected="true">...</a>
+    </li>
+  </ul>
+  <div class="tab-content bg-fog p-3" id="...">
+    <div class="tab-pane fade" id="..." role="tabpanel" aria-labelledby="...">
+      ...
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+          </div>
+
+          <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
+            <h4 class="mb-2">Helper Classes</h4>
+            <ul class="list-unstyled">
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#tabs-horizontal">Horiztonal Tabs</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#tabs-vertical">Vertical Tabs</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#tabs-content">Content Tabs</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+.header {
+    height: 60px;
+    width: 100%;
+}
+
+.sidebar-header {
+    box-shadow: 0 0px 25px 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    width: 280px;
+    top: 0;
+}
+
+.content-header {
+    .main-heading {
+        span {
+            letter-spacing: 2px;
+        }
+    }
+}

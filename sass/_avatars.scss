@@ -1,0 +1,112 @@
+// DELETE "-example" FOR PRODUCTION
+
+.avatar-example { 
+    &:after, 
+    &:before {
+        content: "";
+        height: 25%;
+        width: 25%;
+        position: absolute;
+        border-radius: $border-radius-circle;
+        border: 2px solid $white;
+    }
+    &:after {
+        background: $lime;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        background: $red;
+        left: 0;
+        top: 0;
+    }
+}
+
+.avatar-xl {
+    height: 72px;
+    width: 72px;
+}
+
+.avatar-lg {
+    height: 54px;
+    width: 54px;
+}
+
+.avatar-md {
+    height: 36px;
+    width: 36px;
+}
+
+.avatar-sm {
+    height: 24px;
+    width: 24px;
+}
+
+.avatar-xs {
+    height: 18px;
+    width: 18px;
+}
+
+.avatar-initials {
+    span {
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.avatar-group {
+    > .avatar {
+        display: inline-block;
+        margin-left: -10px;
+        @include transition();
+        &:first-child {
+            margin-left: 0;
+            z-index: 6;
+        }
+        &:nth-child(1) {
+            z-index: 6;
+        }
+        &:nth-child(2) {
+            z-index: 5;
+        }
+        &:nth-child(3) {
+            z-index: 4;
+        }
+        &:nth-child(4) {
+            z-index: 3;
+        }
+        &:nth-child(5) {
+            z-index: 2;
+        }
+        &:nth-child(6) {
+            z-index: 1;
+        }
+        > div {
+            border-radius: 50%;
+            border: 2px solid $white;
+            cursor: pointer;
+        }
+        .avatar-container {
+            background: rgba($slate, 0);
+            &:hover {
+                background: rgba($slate, 1);
+                img {
+                    opacity: 0.65;
+                }
+            }
+        }
+        .avatar-dropdown {
+            background: $grey-lighten-5;
+            height: 100%;
+            width: 100%;
+            @include transition();
+            &:hover {
+                background-color: darken($grey-lighten-5, 10%);
+            }
+        }
+        .avatar-img {
+            @include transition();
+        }
+    }
+}

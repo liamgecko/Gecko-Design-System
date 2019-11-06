@@ -1,0 +1,25 @@
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    background-color: transparent;
+    @include transition;
+  
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+    }
+  }
+  
+  a.link-light {
+    color: $white;
+    &:hover {
+      color: $lime;
+    }
+  }
+  
+  a.link-dark {
+    color: $body-color;
+    &:hover {
+      color: $lime;
+    }
+  }

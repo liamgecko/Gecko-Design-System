@@ -1,0 +1,60 @@
+// Disable animation if transitions are disabled
+@if $enable-transitions {
+  @keyframes progress-bar-stripes {
+    from { background-position: $progress-height 0; }
+    to { background-position: 0 0; }
+  }
+}
+
+.progress {
+  display: flex;
+  height: $progress-height;
+  overflow: hidden; // force rounded corners by cropping it
+  @include font-size($progress-font-size);
+  background-color: $progress-bg;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $progress-bar-color;
+  text-align: center;
+  white-space: nowrap;
+  background: $lime;
+  background: -moz-linear-gradient(left, $lime-lighten-2 0%, $lime 100%);
+  background: -webkit-linear-gradient(left, $lime-lighten-2 0%,$lime 100%); 
+  background: linear-gradient(to right, $lime-lighten-2 0%,$lime 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$lime-lighten-2', endColorstr='$lime',GradientType=0 );
+  @include transition($progress-bar-transition);
+  &.progress-error {
+    background: $red;
+    background: -moz-linear-gradient(left, $red-lighten-1 0%, $red 100%);
+    background: -webkit-linear-gradient(left, $red-lighten-1 0%,$red 100%); 
+    background: linear-gradient(to right, $red-lighten-1 0%,$red 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$red-lighten-1', endColorstr='$red',GradientType=0 );
+  }
+}
+
+.progress-bar-striped {
+  @include gradient-striped();
+  background-size: $progress-height $progress-height;
+}
+
+@if $enable-transitions {
+  .progress-bar-animated {
+    animation: progress-bar-stripes $progress-bar-animation-timing;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+}
+
+.progress-label {
+  ul {
+    @include list-unstyled
+  }
+}
