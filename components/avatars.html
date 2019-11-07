@@ -238,9 +238,9 @@
 <figure class="highlight">
 <pre><code data-language="html"><div class="avatar-with-title d-flex align-items-center">
   <div class="avatar avatar-md position-relative mr-1">
-    <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+    <img class="rounded-circle img-fluid" src="..." />
   </div>
-  <span class="font-weight-medium">Liam Young</span>
+  <span class="font-weight-medium">...</span>
 </div>
 </code></pre>
 </figure>
@@ -314,11 +314,25 @@
 
 <!-- CODE SNIPPET -->
 <figure class="highlight">
-<pre><code data-language="html"><div class="avatar-with-title d-flex align-items-center">
-  <div class="avatar avatar-md position-relative mr-1">
-    <img class="rounded-circle img-fluid" src="../img/avatar.jpg" />
+<pre><code data-language="html"><div class="avatar-group">
+  <div class="avatar avatar-md position-relative">
+    <div class="avatar-container" data-toggle="tooltip" data-placement="bottom" title="...">
+      <img class="avatar-img rounded-circle img-fluid" src="..." />
+    </div>
   </div>
-  <span class="font-weight-medium">Liam Young</span>
+  <div class="avatar avatar-md avatar-initials position-relative">
+    <div class="avatar-dropdown dropdown">
+      <span title="..." class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle justify-content-center align-items-center" data-toggle="dropdown">...</span>
+      <div class="dropdown-menu shadow-sm rounded p-2">
+        <div class="dropdown-item avatar-with-title d-flex align-items-center">
+          <div class="avatar avatar-sm position-relative mr-1">
+            <img class="rounded-circle img-fluid" src="..." />
+          </div>
+          <span class="font-size-smaller font-weight-medium">...</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </code></pre>
 </figure>
@@ -338,7 +352,7 @@
 <!-- CODE SNIPPET -->
 <figure class="highlight mt-5">
 <pre><code data-language="html"><div class="avatar avatar-md avatar-initials position-relative">
-  <span title="Liam Young" class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle bg-lime">LY</span>
+  <span title="Liam Young" class="text-style-uppercase font-size-smaller font-weight-bold rounded-circle bg-lime">...</span>
 </div>
 </code></pre>
 </figure>

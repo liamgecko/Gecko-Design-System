@@ -173,6 +173,7 @@ textarea.form-control {
 .form-text {
   display: block;
   margin-top: $form-text-margin-top;
+  margin-bottom: $form-text-margin-bottom;
 }
 
 
@@ -216,6 +217,7 @@ textarea.form-control {
 
 .form-check-label {
   margin-bottom: 0; // Override default `<label>` bottom margin
+  font-weight: $font-weight-medium;
 }
 
 .form-check-inline {

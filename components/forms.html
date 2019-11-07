@@ -195,7 +195,7 @@
 
             <section class="mb-5">
 
-              <h2 id="form-checkbox-radio">Checkboxes and Radio Buttons</h2>
+              <h2 id="form-checkbox-radio">Checkboxes and Radio</h2>
 
               <p>Default checkboxes and radios are improved upon with the help of .form-check, a single class for both input types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
 
@@ -323,7 +323,7 @@
 </code></pre>
 </figure>
 
-              <h3>Checkbox and radio as buttons</h3>
+              <h3>As buttons</h3>
 
               <p>Checkboxes and radio buttons can be styled to operate as buttons, these are typically displayed inline with the .form-check-inline class. To add the button styling add a .form-check-btn class to each input.</p>
 
@@ -365,6 +365,74 @@
                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn3" value="option3">
                   <label class="form-check-label p-2 rounded" for="exampleRadiosBtn3">
                     Radio option three
+                  </label>
+                </div>
+              </form>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><form>
+  <div class="form-check form-check-inline form-check-btn">
+    <input class="form-check-input" type="checkbox" name="..." id="..." value="...">
+    <label class="form-check-label p-2 rounded" for="...">
+      Checkbox option one
+    </label>
+  </div>
+</form>
+
+<form>
+  <div class="form-check form-check-inline form-check-btn">
+    <input class="form-check-input" type="radio" name="..." id="..." value="...">
+    <label class="form-check-label p-2 rounded" for="...">
+      Radio option one
+    </label>
+  </div>
+</form>
+</code></pre>
+</figure>
+
+              <h3>As buttons with icons</h3>
+
+              <p>Checkboxes and radio buttons can be styled to operate as buttons, these are typically displayed inline with the .form-check-inline class. To add the button styling add a .form-check-btn class to each input.</p>
+
+              <form class="mb-5">
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn4" value="option1" checked>
+                  <label class="form-check-label p-2 rounded text-center" for="exampleCheckboxBtn4">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Checkbox option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn5" value="option2">
+                  <label class="form-check-label p-2 rounded text-center" for="exampleCheckboxBtn5">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Checkbox option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="checkbox" name="exampleCheckbox" id="exampleCheckboxBtn6" value="option3">
+                  <label class="form-check-label p-2 rounded text-center" for="exampleCheckboxBtn6">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Checkbox option three
+                  </label>
+                </div>
+              </form>
+
+              <form>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn4" value="option1" checked>
+                  <label class="form-check-label p-2 rounded text-center" for="exampleRadiosBtn4">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Radio option one
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn5" value="option2">
+                  <label class="form-check-label p-2 rounded text-center" for="exampleRadiosBtn5">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Radio option two
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-check-btn">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosBtn6" value="option3">
+                  <label class="form-check-label p-2 rounded text-center" for="exampleRadiosBtn6">
+                    <span class="form-check-icon d-block font-size-larger mb-1 far fa-comments"></span>Radio option three
                   </label>
                 </div>
               </form>
@@ -692,7 +760,7 @@
             <ul class="list-unstyled">
               <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-control">Form Control</a></li>
               <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-fields">Form Fields</a></li>
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-checkbox-radio">Checkboxes and Radio Buttons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-checkbox-radio">Checkboxes and Radio</a></li>
               <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-help-text">Help Text</a></li>
               <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-disabled">Disabled</a></li>
               <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#form-sizing">Sizing</a></li>
