@@ -1,0 +1,90 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    min-height: $font-size-base * $line-height-base;
+    .toggle-input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked ~ .toggle-label {
+            &::before {
+                color: $toggle-control-indicator-checked-color;
+                border-color: $toggle-control-indicator-checked-border-color;
+                @include gradient-bg($toggle-control-indicator-checked-bg);
+                @include box-shadow($toggle-control-indicator-checked-box-shadow);
+            }
+            &::after {
+                background-color: $toggle-control-indicator-bg;
+                transform: translateX($toggle-switch-width - $toggle-control-indicator-size);
+            }
+        }
+        &:disabled {
+            cursor: default;
+            &~ .toggle-label::before {
+                background-color: $toggle-control-indicator-checked-disabled-bg;
+            }
+        }
+        &:focus ~ .toggle-label::before {
+            @if $enable-shadows {
+            box-shadow: $input-box-shadow, $input-focus-box-shadow;
+            } @else {
+            box-shadow: $toggle-control-indicator-focus-box-shadow;
+            }
+        }
+        &:focus:not(:checked) ~ .toggle-label::before {
+            border-color: $toggle-control-indicator-focus-border-color;
+        }
+    }
+    .toggle-label {
+        position: relative;
+        margin-bottom: 0;
+        vertical-align: top;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            border-radius: $toggle-switch-indicator-border-radius;
+        }
+        &::before {
+            height: $toggle-control-indicator-size;
+            width: $toggle-switch-width;
+            pointer-events: all;
+            background-color: $toggle-control-indicator-bg;
+            border: $toggle-control-indicator-border-width solid $toggle-control-indicator-border-color;
+            @include box-shadow($toggle-control-indicator-box-shadow);
+            
+        }
+        &::after {
+            top: #{$toggle-control-indicator-border-width * 3};
+            left: #{$toggle-control-indicator-border-width * 3};
+            width: $toggle-switch-indicator-size;
+            height: $toggle-switch-indicator-size;
+            background-color: $toggle-control-indicator-border-color;
+            @include transition(transform .15s ease-in-out, $toggle-transition);
+        }
+    }
+}
+
+.toggle-large {
+    .toggle-input {
+        &:checked ~ .toggle-label {
+            &::after {
+                transform: translateX(26px);
+            }
+        }
+    }
+    .toggle-label {
+        &::before {
+            height: 30px;
+            width: 56px;
+        }
+        &::after {
+            top: 4px;
+            left: 4px;
+            width: 22px;
+            height: 22px;
+        }
+    }
+}

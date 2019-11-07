@@ -79,7 +79,7 @@
 
       <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
         <div class="main-heading">
-          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Toggles</span>
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Toggle</span>
         </div>
       </div>
 
@@ -91,16 +91,87 @@
 
             <section class="mb-5">
 
-              <h2>Toggles</h2>
+              <h2>When to Use</h2>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Toggles are a quick way to view and switch between enabled or disabled states.</p>
 
-              <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-              </div>
+              <p>Use Toggle switch when:</p>
+
+              <ul>
+                <li>An instant response of applied settings is required without an explicit action.</li>
+                <li>A setting requires an on/off or show/hide function to display the results.</li>
+                <li>User needs to perform instantaneous actions that do not need a review or confirmation.</li>
+              </ul>
 
             </section>
+
+            <section class="mb-5">
+
+              <h2>Toggle Example</h2>
+
+              <p>Below is an example of a default toggle.</p>
+
+              <div class="toggle">
+                <input type="checkbox" class="toggle-input" id="toggle-switch">
+                <label class="toggle-label" for="toggle-switch"></label>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toggle">
+  <input type="checkbox" class="toggle-input" id="toggle-switch">
+  <label class="toggle-label" for="toggle-switch"></label>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2>Sizing</h2>
+
+              <p>For standard toggles or pages with lots of toggles, use the default version. To call attention to a specific action, choose the larger version.</p>
+
+              <h3>Large toggle</h3>
+
+              <div class="toggle toggle-large">
+                <input type="checkbox" class="toggle-input" id="toggle-switch-2">
+                <label class="toggle-label" for="toggle-switch-2"></label>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toggle toggle-large">
+  <input type="checkbox" class="toggle-input" id="toggle-switch">
+  <label class="toggle-label" for="toggle-switch"></label>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+                <h2>Disabled Toggle</h2>
+  
+                <p>A toggle is disabled when a selection has already been made outside of the current context that negates the need for the toggle.</p>
+  
+                <div class="toggle">
+                  <input type="checkbox" disabled class="toggle-input" id="toggle-switch-3">
+                  <label class="toggle-label" for="toggle-switch-3"></label>
+                </div>
+  
+  <!-- CODE SNIPPET -->
+  <figure class="highlight mb-5 mt-5">
+  <pre><code data-language="html"><div class="toggle">
+    <input type="checkbox" disabled class="toggle-input" id="toggle-switch">
+    <label class="toggle-label" for="toggle-switch"></label>
+  </div>
+  </code></pre>
+  </figure>
+  
+              </section>
 
           </div>
 
@@ -120,6 +191,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
