@@ -55,6 +55,7 @@
               <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
               <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
               <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
+              <li><a class="link-light pb-1 mb-1" href="popover.html">Popover</a></li>
               <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
               <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
               <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
@@ -91,9 +92,179 @@
 
             <section class="mb-5">
 
-              <h2>Font Styles</h2>
+              <h2 id="toast-markup">Markup</h2>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="toast toast-success rounded shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body d-flex align-items-stretch">
+                  <div class="toast-icon color-white bg-green p-2 d-flex align-items-center">
+                    <span class="rounded-circle border border-color-white far fa-check"></span>
+                  </div>
+                  <div class="toast-content p-2">
+                    Hello, world! This is a toast message.
+                  </div>
+                  <div class="ml-auto d-flex align-items-center pr-2">
+                    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                      <span class="far fa-times" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toast toast-success rounded shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body d-flex align-items-stretch">
+    <div class="toast-icon color-white bg-green p-2 d-flex align-items-center">
+      <span class="rounded-circle border border-color-white far fa-check"></span>
+    </div>
+    <div class="toast-content p-2">
+      ...
+    </div>
+    <div class="ml-auto d-flex align-items-center pr-2">
+      <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+        <span class="far fa-times" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="toast-variation">Variations</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <h3>Info</h3>
+
+              <div class="toast toast-info rounded shadow bg-white mb-5" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body d-flex align-items-stretch">
+                  <div class="toast-icon color-white bg-dark-blue p-2 d-flex align-items-center">
+                    <span class="rounded-circle border border-color-white fas fa-info"></span>
+                  </div>
+                  <div class="toast-content p-2">
+                    Hello, world! This is a toast message.
+                  </div>
+                  <div class="ml-auto d-flex align-items-center pr-2">
+                    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                      <span class="far fa-times" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toast toast-info rounded shadow bg-white mb-5" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body d-flex align-items-stretch">
+    <div class="toast-icon color-white bg-dark-blue p-2 d-flex align-items-center">
+      <span class="rounded-circle border border-color-white fas fa-info"></span>
+    </div>
+    <div class="toast-content p-2">
+      ...
+    </div>
+    <div class="ml-auto d-flex align-items-center pr-2">
+      <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+        <span class="far fa-times" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Warning</h3>
+
+              <div class="toast toast-warning rounded shadow bg-white mb-5" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body d-flex align-items-stretch">
+                  <div class="toast-icon color-white bg-orange p-2 d-flex align-items-center">
+                    <span class="rounded-circle border border-color-white fas fa-exclamation"></span>
+                  </div>
+                  <div class="toast-content p-2">
+                    Hello, world! This is a toast message.
+                  </div>
+                  <div class="ml-auto d-flex align-items-center pr-2">
+                    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                      <span class="far fa-times" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toast toast-warning rounded shadow bg-white mb-5" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body d-flex align-items-stretch">
+    <div class="toast-icon color-white bg-orange p-2 d-flex align-items-center">
+      <span class="rounded-circle border border-color-white fas fa-exclamation"></span>
+    </div>
+    <div class="toast-content p-2">
+      ...
+    </div>
+    <div class="ml-auto d-flex align-items-center pr-2">
+      <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+        <span class="far fa-times" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>        
+
+              <h3>Error</h3>
+
+              <div class="toast toast-error rounded shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body d-flex align-items-stretch">
+                  <div class="toast-icon color-white bg-red p-2 d-flex align-items-center">
+                    <span class="rounded-circle border border-color-white far fa-times"></span>
+                  </div>
+                  <div class="toast-content p-2">
+                    Hello, world! This is a toast message.
+                  </div>
+                  <div class="ml-auto d-flex align-items-center pr-2">
+                    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                      <span class="far fa-times" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="toast toast-error rounded shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body d-flex align-items-stretch">
+    <div class="toast-icon color-white bg-red p-2 d-flex align-items-center">
+      <span class="rounded-circle border border-color-white far fa-times"></span>
+    </div>
+    <div class="toast-content p-2">
+      ...
+    </div>
+    <div class="ml-auto d-flex align-items-center pr-2">
+      <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+        <span class="far fa-times" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>   
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="toast-accessibility">Accessibility</h2>
+
+              <p>Toasts are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your toasts in an aria-live region. Changes to live regions (such as injecting/updating a toast component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user. Additionally, include aria-atomic="true" to ensure that the entire toast is always announced as a single (atomic) unit, rather than announcing what was changed (which could lead to problems if you only update part of the toast’s content, or if displaying the same toast content at a later point in time). If the information needed is important for the process, e.g. for a list of errors in a form, then use the alert component instead of toast.</p>
+
+              <p>Note that the live region needs to be present in the markup before the toast is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.</p>
+
+              <p>You also need to adapt the role and aria-live level depending on the content. If it’s an important message like an error, use role="alert" aria-live="assertive", otherwise use role="status" aria-live="polite" attributes.</p>
 
             </section>
 
@@ -102,7 +273,9 @@
           <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
             <h4 class="mb-2">Helper Classes</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#helper-classes-font-styles">Font Styles</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#toast-markup">Markup</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#toast-variations">Toast Variations</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#toast-accessibility">Accessibility</a></li>
             </ul>
           </div>
 
@@ -115,6 +288,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js"></script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()

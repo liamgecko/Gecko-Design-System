@@ -8899,18 +8899,9 @@ button.close {
   appearance: none; }
 
 .toast {
-  max-width: 350px;
+  max-width: 600px;
   overflow: hidden;
-  font-size: 0.875rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.25rem 0.75rem rgba(1, 1, 1, 0.1);
-  backdrop-filter: blur(10px);
-  opacity: 0;
-  border-radius: 0.25rem; }
-  .toast:not(:last-child) {
-    margin-bottom: 0.75rem; }
+  opacity: 0; }
   .toast.showing {
     opacity: 1; }
   .toast.show {
@@ -8918,18 +8909,12 @@ button.close {
     opacity: 1; }
   .toast.hide {
     display: none; }
-
-.toast-header {
-  display: flex;
-  align-items: center;
-  padding: 0.25rem 0.75rem;
-  color: #bfc2c2;
-  background-color: rgba(255, 255, 255, 0.85);
-  background-clip: padding-box;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
-
-.toast-body {
-  padding: 0.75rem; }
+  .toast .toast-body .toast-icon span {
+    border-width: 1.5px;
+    padding: 6px;
+    height: 32px;
+    width: 32px;
+    text-align: center; }
 
 .modal-open {
   overflow: hidden; }
@@ -9275,6 +9260,40 @@ button.close {
 .popover-body {
   padding: 0.5rem 0.75rem;
   color: #314851; }
+
+.conversation-message .avatar {
+  flex-shrink: 0; }
+.conversation-message .conversation-message-container {
+  width: 100%;
+  max-width: 600px; }
+.conversation-message .conversation-message-content {
+  background: #f1f1f1; }
+  .conversation-message .conversation-message-content:before {
+    content: "";
+    border-width: 0 14px 12px 0;
+    border-color: transparent #f1f1f1 transparent transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    left: -12px; }
+.conversation-message.agent .row {
+  flex-direction: row-reverse; }
+.conversation-message.agent .conversation-message-content {
+  background: #f2eff4; }
+  .conversation-message.agent .conversation-message-content:before {
+    content: "";
+    border-width: 0 14px 12px 0;
+    border-color: transparent #f2eff4 transparent transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    left: -12px; }
+.conversation-message .conversation-message-meta {
+  line-height: 18px; }
 
 .carousel {
   position: relative; }

@@ -718,7 +718,7 @@ $dropdown-item-padding-y:           .25rem !default;
 $dropdown-item-padding-x:           1.5rem !default;
 $dropdown-header-color:             $grey !default;
 
-// CUSTOM FORMS
+// TOGGLES
 
 $toggle-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -914,26 +914,8 @@ $list-group-action-hover-color:     $list-group-action-color !default;
 $list-group-action-active-color:    $body-color !default;
 $list-group-action-active-bg:       $grey-lighten-2 !default;
 
-// TOASTS
-
-$toast-max-width:                   350px !default;
-$toast-padding-x:                   .75rem !default;
-$toast-padding-y:                   .25rem !default;
-$toast-font-size:                   .875rem !default;
-$toast-color:                       null !default;
-$toast-background-color:            rgba($white, .85) !default;
-$toast-border-width:                1px !default;
-$toast-border-color:                rgba(0, 0, 0, .1) !default;
-$toast-border-radius:               .25rem !default;
-$toast-box-shadow:                  0 .25rem .75rem rgba($black, .1) !default;
-
-$toast-header-color:                $grey-lighten-3 !default;
-$toast-header-background-color:     rgba($white, .85) !default;
-$toast-header-border-color:         rgba(0, 0, 0, .05) !default;
-
 // MODALS
 
-// Padding applied to the modal body
 $modal-inner-padding:               1rem !default;
 
 $modal-dialog-margin:               .5rem !default;
