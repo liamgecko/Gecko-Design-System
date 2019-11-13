@@ -9261,13 +9261,15 @@ button.close {
   padding: 0.5rem 0.75rem;
   color: #314851; }
 
-.conversation-message .avatar {
-  flex-shrink: 0; }
 .conversation-message .conversation-message-container {
-  width: 100%;
-  max-width: 600px; }
+  flex-grow: 2;
+  cursor: inherit;
+  overflow-wrap: break-word;
+  word-break: break-word; }
 .conversation-message .conversation-message-content {
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  z-index: 0;
+  max-width: 100%; }
   .conversation-message .conversation-message-content:before {
     content: "";
     border-width: 0 14px 12px 0;
@@ -9281,19 +9283,14 @@ button.close {
 .conversation-message.agent .row {
   flex-direction: row-reverse; }
 .conversation-message.agent .conversation-message-content {
-  background: #f2eff4; }
+  background-color: #f2eff4; }
   .conversation-message.agent .conversation-message-content:before {
-    content: "";
-    border-width: 0 14px 12px 0;
-    border-color: transparent #f2eff4 transparent transparent;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    position: absolute;
-    top: 0;
-    left: -12px; }
-.conversation-message .conversation-message-meta {
-  line-height: 18px; }
+    border-width: 12px 14px 0 0;
+    border-color: #f2eff4 transparent transparent;
+    left: auto;
+    right: -12px; }
+.conversation-message.agent .conversation-message-meta {
+  text-align: right; }
 
 .carousel {
   position: relative; }
