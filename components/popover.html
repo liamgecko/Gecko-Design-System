@@ -44,6 +44,7 @@
             <ul class="list-unstyled m-0">
               <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
               <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="badges.html">Badges</a></li>
               <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
               <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
               <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
@@ -56,12 +57,11 @@
               <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
               <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
               <li><a class="link-light pb-1 mb-1" href="popover.html">Popover</a></li>
-              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
               <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
               <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="spinner.html">Spinner</a></li>
               <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
               <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
-              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
               <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
               <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
               <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
@@ -92,9 +92,243 @@
 
             <section class="mb-5">
 
-              <h2 id="toast-markup">Popover</h2>
+              <h2 id="popover-basic">Basic Popover</h2>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>A popover is a non-modal dialog. The component should be paired with a clickable trigger element. Popovers are useful when guiding users through new features or providing a walkthrough.</p>
+
+                <div class="popover popover-example bs-popover-right rounded bg-white shadow p-2">
+                  <div class="arrow"></div>
+                  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                    <h4 class="m-0">Popover Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="far fa-times"></span>
+                    </button>
+                  </div>
+                  <div class="popover-body font-size-small">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                  </div>
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="popover-walkthrough">Popover Walkthrough</h2>
+
+              <p>If the function of the popover is to walk a client through a feature then the popover should contain a navigation footer.</p>
+
+                <div class="popover popover-example bs-popover-right rounded bg-white shadow p-2">
+                  <div class="arrow"></div>
+                  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                    <h4 class="m-0">Popover Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="far fa-times"></span>
+                    </button>
+                  </div>
+                  <div class="popover-body font-size-small">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                  </div>
+                  <div class="popover-footer pt-2 mt-2 border-top">
+                    <div class="pagination-container d-flex justify-content-between align-items-center">
+                      <div class="popover-steps font-size-smallest" aria-label="step-number">
+                        Step 1 of 4
+                      </div>
+                      <div class="popover-btns" aria-label="step-buttons">
+                        <a class="btn btn-naked btn-sm" href="#" aria-label="Skip">
+                          Skip
+                        </a>
+                        <a class="btn btn-primary btn-sm" href="#" aria-label="Next Step">
+                          Next
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+  <div class="popover-footer pt-2 mt-2 border-top">
+    <div class="pagination-container d-flex justify-content-between align-items-center">
+      <div class="popover-steps font-size-smallest" aria-label="step-number">
+        ...
+      </div>
+      <div class="popover-btns" aria-label="step-buttons">
+        <a class="btn btn-naked btn-sm" href="#" aria-label="Skip">
+          ...
+        </a>
+        <a class="btn btn-primary btn-sm" href="#" aria-label="Next Step">
+          ...
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="popover-placement">Placement</h2>
+
+              <p>Four options are available: top, right, bottom, and left aligned.</p>
+
+              <h3>Top</h3>
+
+              <div class="popover popover-example bs-popover-top rounded bg-white shadow p-2 mb-5">
+                <div class="arrow"></div>
+                <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                  <h4 class="m-0">Popover Top</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="far fa-times"></span>
+                  </button>
+                </div>
+                <div class="popover-body font-size-small">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover bs-popover-top rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Right</h3>
+
+              <div class="popover popover-example bs-popover-right rounded bg-white shadow p-2 mb-5">
+                <div class="arrow"></div>
+                <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                  <h4 class="m-0">Popover Right</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="far fa-times"></span>
+                  </button>
+                </div>
+                <div class="popover-body font-size-small">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover bs-popover-right rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Bottom</h3>
+
+              <div class="popover popover-example bs-popover-bottom rounded bg-white shadow p-2 mb-5">
+                <div class="arrow"></div>
+                <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                  <h4 class="m-0">Popover Bottom</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="far fa-times"></span>
+                  </button>
+                </div>
+                <div class="popover-body font-size-small">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover bs-popover-bottom rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Left</h3>
+
+              <div class="popover popover-example bs-popover-left rounded bg-white shadow p-2">
+                <div class="arrow"></div>
+                <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+                  <h4 class="m-0">Popover Left</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="far fa-times"></span>
+                  </button>
+                </div>
+                <div class="popover-body font-size-small">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed libero aliquam lorem posuere suscipit eu hendrerit ipsum. Sed neque velit, placerat nec lorem id, vestibulum tincidunt enim. Vivamus at velit lorem.
+                </div>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="popover bs-popover-left rounded bg-white shadow p-2">
+  <div class="arrow"></div>
+  <div class="popover-header mb-2 pb-2 border-bottom d-flex justify-content-between align-items-center">
+    <h4 class="m-0">...</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="far fa-times"></span>
+    </button>
+  </div>
+  <div class="popover-body font-size-small">
+    ...
+  </div>
+</div>
+</code></pre>
+</figure>
 
             </section>
 
@@ -103,7 +337,9 @@
           <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
             <h4 class="mb-2">Sections</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#toast-markup">Markup</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#popover-basic">Basic Popover</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#popover-walkthrough">Walkthrough Popover</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#popover-placement">Placement</a></li>
             </ul>
           </div>
 
@@ -121,6 +357,19 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+      $(function(){
+        $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+              var content = $(this).attr("data-popover-content");
+              return $(content).children(".popover-body").html();
+            },
+            title: function() {
+              var title = $(this).attr("data-popover-content");
+              return $(title).children(".popover-header").html();
+            }
+        });
+      });
     </script>
 
   </body>

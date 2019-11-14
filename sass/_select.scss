@@ -1,0 +1,24 @@
+.select-value {
+    &:not(:first-of-type) {
+        position: relative;
+        margin-left: 35px;
+        &:before {
+            content: "OR";
+            background: #30628e;
+            position: absolute;
+            bottom: 0;
+            left: -30px;
+            color: #fff;
+            border-radius: 50%;
+            line-height: 25px;
+            height: 24px;
+            width: 24px;
+            font-size: 9px;
+            font-weight: 800;
+            text-align: center;
+        }
+    }
+    .select-value-icon {
+        margin-right: 5px
+    }
+}

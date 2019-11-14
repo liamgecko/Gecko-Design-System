@@ -44,6 +44,7 @@
             <ul class="list-unstyled m-0">
               <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
               <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="badges.html">Badges</a></li>
               <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
               <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
               <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
@@ -56,12 +57,11 @@
               <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
               <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
               <li><a class="link-light pb-1 mb-1" href="popover.html">Popover</a></li>
-              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
               <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
               <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="spinner.html">Spinner</a></li>
               <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
               <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
-              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
               <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
               <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
               <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
@@ -80,7 +80,7 @@
 
       <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
         <div class="main-heading">
-          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Tags</span>
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Badges</span>
         </div>
       </div>
 
@@ -92,18 +92,85 @@
 
             <section class="mb-5">
 
-              <h2>Tags</h2>
+              <h2 id="badge-usage">Useage</h2>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Badges can be used in a variety of ways - namely when creating tags within the product or when using the multi-select function. They can also be used alongside headings to convey a new/beta feature.</p>
 
             </section>
+
+            <section class="mb-5">
+
+              <h2 id="badge-default">Default Badge</h2>
+
+              <p>By default, badges are grey. They can also be coloured depending on the requirements of the badge.</p>
+
+              <span class="badge badge-grey-lighten-5">Default badge</span>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="badge-colours">Colours</h2>
+
+              <p>By default, badges are grey. They can also be coloured depending on the requirements of the badge.</p>
+
+              <span class="badge badge-grey-lighten-5">Default</span>
+              <span class="badge badge-dark-blue">Primary</span>
+              <span class="badge badge-orange">Warning</span>
+              <span class="badge badge-red">Error</span>
+              <span class="badge badge-green">Success</span>
+              <span class="badge badge-blue">Info</span>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="badge-dismissable">Dismissable Badge</h2>
+
+              <p>A dismissable badge would be used when the user wishes to remove a badge. For example, removing a tag or removing an option from a multi-select.</p>
+
+              <a href="" class="badge badge-dismissable select-value badge-grey-lighten-5"><span class="select-value-icon far fa-times"></span> Dismissable</a>
+
+            </section>
+
+            <section class="mb-5">
+
+                <h2 id="badge-filter-tag">Filter Tags</h2>
+  
+                <p>When filtering, badges are used to display each chosen option. An AND/OR option is then shown if two or more are chosen.</p>
+  
+                <a href="" class="badge badge-dismissable select-value badge-grey-lighten-5"><span class="select-value-icon far fa-times"></span> Filter Option One</a>
+                <a href="" class="badge badge-dismissable select-value badge-grey-lighten-5"><span class="select-value-icon far fa-times"></span> Filter Option Two</a>
+                <a href="" class="badge badge-dismissable select-value badge-grey-lighten-5"><span class="select-value-icon far fa-times"></span> Filter Option Three</a>
+  
+              </section>
+
+              <section class="mb-5">
+
+                <h2 id="badge-headings">Headings</h2>
+  
+                <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
+  
+                <h1 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h1>
+                <h2 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h2>
+                <h3 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h3>
+                <h4 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h4>
+                <h5 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h5>
+                <h6 class="mb-3">Example heading <span class="badge badge-dark-blue">New</span></h6>
+  
+              </section>
 
           </div>
 
           <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
             <h4 class="mb-2">Sections</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#"></a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-usage">Useage</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-default">Default Badge</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-colours">Colours</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-dismissable">Dismissable Badge</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-filter-tag">Filter Tags</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#badge-headings">Headings</a></li>
             </ul>
           </div>
 

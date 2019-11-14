@@ -44,6 +44,7 @@
             <ul class="list-unstyled m-0">
               <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
               <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
+              <li><a class="link-light pb-1 mb-1" href="badges.html">Badges</a></li>
               <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
               <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
               <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
@@ -56,12 +57,11 @@
               <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
               <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
               <li><a class="link-light pb-1 mb-1" href="popover.html">Popover</a></li>
-              <li><a class="link-light pb-1 mb-1" href="preloader.html">Preloader</a></li>
               <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
               <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
+              <li><a class="link-light pb-1 mb-1" href="spinner.html">Spinner</a></li>
               <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
               <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
-              <li><a class="link-light pb-1 mb-1" href="tags.html">Tags</a></li>
               <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
               <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
               <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
@@ -80,7 +80,7 @@
 
       <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
         <div class="main-heading">
-          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Preloader</span>
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Spinner</span>
         </div>
       </div>
 
@@ -92,7 +92,129 @@
 
             <section class="mb-5">
 
-              <h2>Preloader</h2>
+              <h2 id="spinner-basic">Basic Spinner</h2>
+
+              <p>Use spinners to let users know that content is being loaded and will take an indeterminate amount of time. There should only be a single spinner on a page at one time.</p>
+
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</code></pre>
+</figure>
+    
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="spinner-colours">Colours</h2>
+
+              <p>A spinners colour can be altered by changing the text colour class. Spinners colour should change depending on which product they are being used.</p>
+
+              <h3>Green (Engage)</h3>
+
+              <div class="spinner-border text-lime" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="spinner-border text-lime" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</code></pre>
+</figure>
+
+              <h3>Purple (Chat)</h3>
+
+              <div class="spinner-border text-purple" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="spinner-border text-purple" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</code></pre>
+</figure>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="spinner-sizing">Sizing</h2>
+
+              <p>The size of the spinner should be set depending on its function.</p>
+
+              <table class="table mb-5">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Class</th>
+                    <th>Spinner</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>X-small</td>
+                    <td>spinner-xs</td>
+                    <th>
+                      <div class="spinner-border spinner-xs" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </th>
+                    <td>Use inside components such as toggles</td>
+                  </tr>
+                  <tr>
+                    <td>Small</td>
+                    <td>spinner-sm</td>
+                    <th>
+                      <div class="spinner-border spinner-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </th>
+                    <td>Use inside smaller elements such as buttons</td>
+                  </tr>
+                  <tr>
+                    <td>Medium (default)</td>
+                    <td>-</td>
+                    <th>
+                      <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </th>
+                    <td>Default spinner size</td>
+                  </tr>
+                  <tr>
+                    <td>Large</td>
+                    <td>spinner-lg</td>
+                    <th>
+                      <div class="spinner-border spinner-lg" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </th>
+                    <td>Use within content panels or tables</td>
+                  </tr>
+                  <tr>
+                    <td>X-large</td>
+                    <td>spinner-xl</td>
+                    <th>
+                      <div class="spinner-border spinner-xl" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </th>
+                    <td>Use when entire screen is loading</td>
+                  </tr>
+                </tbody>
+              </table>
 
             </section>
 
@@ -101,7 +223,9 @@
           <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
             <h4 class="mb-2">Sections</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#helper-classes-font-styles">Font Styles</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#spinner-basic">Basic Spinner</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#spinner-colours">Colours</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#spinner-sizing">Sizing</a></li>
             </ul>
           </div>
 
@@ -114,6 +238,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/code.min.js" ></script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()

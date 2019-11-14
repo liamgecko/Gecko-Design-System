@@ -18,38 +18,26 @@
   animation: spinner-border .75s linear infinite;
 }
 
-.spinner-border-sm {
+.spinner-xs {
+  width: $spinner-width-xs;
+  height: $spinner-height-xs;
+  border-width: $spinner-border-width-xs;
+}
+
+.spinner-sm {
   width: $spinner-width-sm;
   height: $spinner-height-sm;
   border-width: $spinner-border-width-sm;
 }
 
-//
-// Growing circle
-//
-
-@keyframes spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-  }
+.spinner-lg {
+  width: $spinner-width-lg;
+  height: $spinner-height-lg;
+  border-width: $spinner-border-width-lg;
 }
 
-.spinner-grow {
-  display: inline-block;
-  width: $spinner-width;
-  height: $spinner-height;
-  vertical-align: text-bottom;
-  background-color: currentColor;
-  // stylelint-disable-next-line property-blacklist
-  border-radius: 50%;
-  opacity: 0;
-  animation: spinner-grow .75s linear infinite;
-}
-
-.spinner-grow-sm {
-  width: $spinner-width-sm;
-  height: $spinner-height-sm;
+.spinner-xl {
+  width: $spinner-width-xl;
+  height: $spinner-height-xl;
+  border-width: $spinner-border-width-xl;
 }

@@ -859,8 +859,8 @@ $pagination-disabled-border-color:  $grey-lighten-2 !default;
 
 $badge-font-size:                   75% !default;
 $badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
+$badge-padding-y:                   .5em !default; 
+$badge-padding-x:                   .75em !default;
 $badge-border-radius:               $border-radius !default;
 
 $badge-transition:                  $btn-transition !default;
@@ -954,7 +954,7 @@ $modal-transition:                  transform .3s ease-out !default;
 
 $popover-font-size:                 $font-size-small !default;
 $popover-bg:                        $white !default;
-$popover-max-width:                 276px !default;
+$popover-max-width:                 326px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba($black, .2) !default;
 $popover-border-radius:             $border-radius-lg !default;
@@ -1005,11 +1005,23 @@ $carousel-transition:                transform $carousel-transition-duration eas
 
 $spinner-width:         2rem !default;
 $spinner-height:        $spinner-width !default;
-$spinner-border-width:  .25em !default;
+$spinner-border-width:  .2em !default;
 
-$spinner-width-sm:        1rem !default;
+$spinner-width-xs:        0.75rem !default;
+$spinner-height-xs:       $spinner-width-xs !default;
+$spinner-border-width-xs: .075em !default;
+
+$spinner-width-sm:        1.25rem !default;
 $spinner-height-sm:       $spinner-width-sm !default;
-$spinner-border-width-sm: .2em !default;
+$spinner-border-width-sm: .125em !default;
+
+$spinner-width-lg:        2.75rem !default;
+$spinner-height-lg:       $spinner-width-lg !default;
+$spinner-border-width-lg: .225em !default;
+
+$spinner-width-xl:        3.25rem !default;
+$spinner-height-xl:       $spinner-width-xl !default;
+$spinner-border-width-xl: .225em !default;
 
 // Printing
 
