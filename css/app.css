@@ -9569,6 +9569,37 @@ a.link-dark {
       .avatar-group > .avatar .avatar-img {
         transition: none; } }
 
+.reply-box .reply-box-toolbar ul li,
+.reply-box .reply-box-controls ul li {
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  .reply-box .reply-box-toolbar ul li span:hover,
+  .reply-box .reply-box-controls ul li span:hover {
+    color: #1e2c31;
+    cursor: pointer; }
+.reply-box .reply-box-controls ul li:first-child {
+  padding-left: 0; }
+.reply-box .reply-box-channels ul::before {
+  content: "";
+  height: 1px;
+  background-color: #d9dbdb;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  position: absolute; }
+.reply-box .reply-box-channels ul li {
+  position: relative;
+  z-index: 1;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .reply-box .reply-box-channels ul li {
+      transition: none; } }
+  .reply-box .reply-box-channels ul li.active, .reply-box .reply-box-channels ul li:hover {
+    border-color: #680098; }
+
 @media print {
   *,
   *::before,

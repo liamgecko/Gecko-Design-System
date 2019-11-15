@@ -1,0 +1,51 @@
+.reply-box {
+    .reply-box-toolbar,
+    .reply-box-controls {
+        ul {
+            li {
+                padding-left: .5rem;
+                padding-right: .5rem;
+                span {
+                    &:hover {
+                        color: darken($slate, 10%);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .reply-box-controls {
+        ul {
+            li {
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .reply-box-channels {
+        ul {
+            &::before {
+                content: "";
+                height: 1px;
+                background-color: $border-color;
+                left: 0;
+                right: 0;
+                bottom: 1px;
+                position: absolute;
+            }
+            li {
+                position: relative;
+                z-index: 1;
+                border-bottom: 3px solid transparent;
+                padding-bottom: 13px;
+                cursor: pointer;
+                @include transition();
+                &.active,
+                &:hover {
+                    border-color: $purple;
+                }
+            }
+        }
+    }
+}
