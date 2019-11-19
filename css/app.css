@@ -1604,16 +1604,23 @@ p code span {
 .table td,
 .table th {
   white-space: nowrap; }
-
-.sticky-column {
+.table .sticky-column {
   position: sticky;
   right: 0;
-  background: #FFF;
-  box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.05); }
-
-ul.confidence-level li {
+  background-color: #FFF;
+  box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.03);
+  background-clip: padding-box; }
+  .table .sticky-column.active {
+    z-index: 1; }
+.table .fixed-column {
+  max-width: 380px;
+  min-width: 380px;
+  white-space: normal; }
+.table .cell-name {
+  line-height: 1.25; }
+.table ul.confidence-level li {
   margin-right: 4px !important; }
-ul.confidence-level .confidence-circle {
+.table ul.confidence-level .confidence-circle {
   height: 10px;
   width: 10px;
   border-radius: 50%;

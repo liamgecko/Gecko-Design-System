@@ -3,23 +3,33 @@
     th {
         white-space: nowrap;
     }
-}
-
-.sticky-column {
-    position: sticky;
-    right: 0;
-    background: $white;
-    box-shadow: 0 8px 15px 0px rgba(0,0,0,0.05);
-}
-
-ul.confidence-level {
-    li {
-        margin-right: 4px !important;
+    .sticky-column {
+        position: sticky;
+        right: 0;
+        background-color: $white;
+        box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.03);
+        background-clip: padding-box;
+        &.active {
+            z-index: 1;
+        }
     }
-    .confidence-circle {
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        display: block;
+    .fixed-column {
+        max-width: 380px;
+        min-width: 380px;
+        white-space: normal;
+    }
+    .cell-name {
+        line-height: 1.25;
+    }
+    ul.confidence-level {
+        li {
+            margin-right: 4px !important;
+        }
+        .confidence-circle {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: block;
+        }
     }
 }
