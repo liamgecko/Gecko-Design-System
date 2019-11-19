@@ -1,0 +1,25 @@
+.table {
+    td,
+    th {
+        white-space: nowrap;
+    }
+}
+
+.sticky-column {
+    position: sticky;
+    right: 0;
+    background: $white;
+    box-shadow: 0 8px 15px 0px rgba(0,0,0,0.05);
+}
+
+ul.confidence-level {
+    li {
+        margin-right: 4px !important;
+    }
+    .confidence-circle {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display: block;
+    }
+}

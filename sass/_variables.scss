@@ -483,7 +483,7 @@ $table-border-color:          $border-color !default;
 $table-head-bg:               $slate !default;
 $table-head-color:            $slate !default;
 $table-dark-color:            $white !default;
-$table-dark-bg:               rgba($slate, .05) !default;
+$table-dark-bg:               $grey-lighten-5 !default;
 $table-dark-accent-bg:        $table-dark-bg !default;
 $table-dark-hover-color:      $table-dark-color !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
