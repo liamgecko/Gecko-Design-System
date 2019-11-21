@@ -22,7 +22,7 @@
 
       <div class="header sidebar-header position-fixed p-2 d-flex justify-content-start bg-slate-darken-1">
         <div class="logo-container">
-          <img src="../img/gecko-styles.svg" style="width: 142px;">
+          <a href="../index.html"><img src="../img/gecko-styles.svg" style="width: 142px;"></a>
         </div>
       </div>
 
@@ -30,9 +30,8 @@
 
         <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
             <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
-            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/collapse.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
-            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../system/collapse.html" data-toggle="tooltip" data-placement="right" title="System"><span class="fal fa-cogs"></span></a></li>
-            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/collapse.html" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
+            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/alerts.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
+            <li><a class="link-light p-2 font-size-large border-left-transparent" href="" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
             <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
         </ul>
 
@@ -397,6 +396,343 @@
     <tbody>
       <tr>
         <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</code></pre>
+</figure>
+
+            <h2 id="table-sticky">Sticky Actions Column</h2>
+
+            <h3>Chat Example</h3>
+  
+              <div class="table-responsive mb-5">
+
+                <table class="table table-data">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="cell-select cell-fixed">
+                      </th>
+                      <th>Message <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Confidence <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th>Closest match <span class="column-sort fas fa-sort float-right font-size-smallest"></span></th>
+                      <th class="cell-actions cell-fixed sticky-column">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">which way is campus from north street</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Very low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-red"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>Campus branch</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">can i change my major</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>Student help</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">when does the reading list for psychology get released</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Very low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-red"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>Academic calendar</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">who is the provost at gecko university</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>Facilities on campus</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">whens the next solar eclipse</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Very low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-red"></span></li>
+                            <li><span class="confidence-circle bg-red"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>History of Gecko University</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fal fa-comments" data-toggle="tooltip" data-placement="bottom" title="Open conversation"></span>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">hello i am interested in visiting</span><span class="d-block color-grey font-size-smallest">18/11/19 @ 16.15</span></td>
+                      <td>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Low confidence">
+                          <ul class="confidence-level list-inline m-0">
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-orange"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                            <li><span class="confidence-circle bg-grey-lighten-4"></span></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>Hi / First response</td>
+                      <td class="sticky-column">
+                        <span class="far fa-check color-green px-1" data-toggle="tooltip" data-placement="bottom" title="Resolve answer with suggested closest match"></span>
+                        <span class="far fa-times color-red px-1" data-toggle="tooltip" data-placement="bottom" title="Ignore this missed message"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <h3>Form Example</h3>
+
+              <div class="table-responsive mb-5">
+
+                <table class="table table-data">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="cell-select cell-fixed">
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </th>
+                      <th>Name</th>
+                      <th>Start date</th>
+                      <th>Attendees</th>
+                      <th>Sync status</th>
+                      <th class="cell-actions cell-fixed sticky-column">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">November German Meetup</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>50</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">Digital For Good: November meetup</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>120</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">National Museum of Scotland Visit & Coffee</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>9</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">Cramond Loop</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>63</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">Node.js Edinburgh - November 2019</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>111</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form>
+                          <input type="checkbox" value="">
+                        </form>
+                      </td>
+                      <td class="fixed-column"><span class="cell-name d-block font-weight-medium">Edinburgh Devops, Dec 12th</span><span class="d-block color-grey font-size-smallest"><span class="fal fa-map-marker-alt mr-1"></span>Main Building, Gecko Campus</span></td>
+                      <td>19th Nov 2019 @ 11.00<span class="d-block color-grey font-size-smallest"><span class="fal fa-globe-americas mr-1"></span>Europe/London</span></td>
+                      <td>30</td>
+                      <td><span class="fas fa-circle color-grey-lighten-4" data-toggle="tooltip" data-placement="bottom" title="Tooltip to show sync status" style="margin-right: 5px;"></span> Dynamics</td>
+                      <td class="sticky-column text-center">
+                        <div class="dropdown">
+                          <button class="btn btn-naked dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="far fa-ellipsis-h"></span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right shadow-sm rounded p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+<!-- CODE SNIPPET -->
+<figure class="highlight mb-5 mt-5">
+<pre><code data-language="html"><div class="table-responsive">
+  <table class="table table-data">
+    <thead class="thead-dark">
+      <tr>
+        <th class="sticky-column">Title <span class="column-sort fas fa-sort float-right font-size-smallest" aria-hidden="true"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="sticky-column">...</td>
       </tr>
     </tbody>
   </table>
