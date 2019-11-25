@@ -29,10 +29,30 @@
       <div class="sidebar-body position-relative">
 
         <ul class="main-nav list-unstyled mb-0 position-fixed bg-slate-darken-1">
-            <li><a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines"><span class="fal fa-palette"></span></a></li>
-            <li class="active"><a class="link-light p-2 font-size-large border-left-transparent" href="../components/alerts.html" data-toggle="tooltip" data-placement="right" title="Components"><span class="fal fa-browser"></span></a></li>
-            <li><a class="link-light p-2 font-size-large border-left-transparent" href="" data-toggle="tooltip" data-placement="right" title="Utilities"><span class="fal fa-wrench"></span></a></li>
-            <li><a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File"><span class="fal fa-download"></span></a></li>
+            <li>
+              <a class="link-light p-2 font-size-large border-left-transparent" href="../brand-guidelines/logos.html" data-toggle="tooltip" data-placement="right" title="Brand Guidelines">
+                <span class="fal fa-palette" title="Brand Guidelines" aria-hidden="true"></span>
+                <span class="sr-only">Brand Guidelines</span>
+              </a>
+            </li>
+            <li class="active">
+              <a class="link-light p-2 font-size-large border-left-transparent" href="../components/alerts.html" data-toggle="tooltip" data-placement="right" title="Components">
+                <span class="fal fa-browser" title="Components" aria-hidden="true"></span>
+                <span class="sr-only">Components</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-light p-2 font-size-large border-left-transparent" href="" data-toggle="tooltip" data-placement="right" title="Utilities">
+                <span class="fal fa-wrench" title="Utilities" aria-hidden="true"></span>
+                <span class="sr-only">Utilities</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File">
+                <span class="fal fa-download" title="Download Sketch File" aria-hidden="true"></span>
+                <span class="sr-only">Download Sketch File</span>
+              </a>
+            </li>
         </ul>
 
         <div class="nav-container">
@@ -79,7 +99,7 @@
 
       <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
         <div class="main-heading">
-          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Text Editor</span>
+          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime" aria-hidden="true"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Text Editor</span>
         </div>
       </div>
 
@@ -91,7 +111,7 @@
 
             <section class="mb-5">
 
-              <h2>About Text Editors</h2>
+              <h2 id="text-editor-about">About Text Editors</h2>
 
               <p>A text editor is a textarea with added capabilities for use in various scenarios - mainly, when we allow the user to customise text, such as modifying font weights, styles etc.</p>
 
@@ -99,7 +119,7 @@
 
             <section class="mb-5">
 
-              <h2>Default Editor</h2>
+              <h2 id="text-editor-default">Default Editor</h2>
 
               <p>The default rich text editor contains minimal editing capabilities. All icons should contain a tooltip to aid usability.</p>
 
@@ -132,7 +152,7 @@
 
             <section class="mb-5">
 
-              <h2>Editor with Controls</h2>
+              <h2 id="text-editor-controls">Editor with Controls</h2>
 
               <p>An editor with controls allows you to change the purpose of the editor or extend the editor. For example, upload an attachment or create a mail merge tag.</p>
 
@@ -177,7 +197,7 @@
 
             <section class="mb-5">
 
-              <h2>Conversation Editor</h2>
+              <h2 id="text-editor-conversation">Conversation Editor</h2>
 
               <p>Chat conversation editors work in a similar fashion, however channels are displayed in place of editing tools by default and the border removed.</p>
 
@@ -219,7 +239,10 @@
           <div class="content-sub-nav sticky-top col-3 pl-4 border-left">
             <h4 class="mb-2">Sections</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#"></a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#text-editor-about">About Text Editors</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#text-editor-default">Default Text Editors</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#text-editor-controls">Editor with Controls</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#text-editor-conversation">Conversation Editor</a></li>
             </ul>
           </div>
 
