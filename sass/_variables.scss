@@ -66,7 +66,7 @@ $fog :    #F9F9F9 !default;
 // 2. SECONDARY
 
 // // Error
-$red:    #D44B4B !default;
+$red:    #DE6868 !default;
 $red-lighten-1:   lighten($red, 7%);
 $red-lighten-2:   lighten($red, 14%);
 $red-lighten-3:   lighten($red, 24%);
@@ -227,7 +227,7 @@ $theme-colors: map-merge(
 
 $primary:       $dark-blue !default;
 $secondary:     $grey-lighten-5 !default;
-$success:       $lime-darken-2 !default;
+$success:       $green-darken-3 !default;
 $info:          $blue !default;
 $warning:       $orange !default;
 $danger:        $red-darken-1 !default;
