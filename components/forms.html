@@ -125,8 +125,8 @@
 
               <form class="mb-5">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label for="exampleInput">Email address</label>
+                  <input type="email" class="form-control" id="exampleInput" placeholder="Enter email">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
@@ -136,7 +136,7 @@
 <pre><code data-language="html"><form>
   <div class="form-group">
     <label for="...">Email address</label>
-    <input type="email" class="form-control" id="..." aria-describedby="..." placeholder="...">
+    <input type="email" class="form-control" id="..." placeholder="...">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
@@ -171,16 +171,16 @@
 
               <form>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Input Field</label>
-                  <input class="form-control" type="text" placeholder="Default input">
+                  <label for="exampleInput">Input Field</label>
+                  <input class="form-control" id="exampleInput" type="text" placeholder="Default input">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Text Area</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  <label for="exampleTextArea">Text Area</label>
+                  <textarea class="form-control" id="exampleTextArea" rows="6"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Select</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <label for="exampleSelect">Select</label>
+                  <select class="form-control" id="exampleSelect">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios2">
+                  <label class="form-check-label" for="exampleRadios3">
                     Radio option three
                   </label>
                 </div>
@@ -484,11 +484,11 @@
 
               <form>
                 <div class="form-group">
-                  <label>Input Field</label>
+                  <label for="exampleHelp">Input Field</label>
                   <small class="form-text text-muted">
                     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                   </small>
-                  <input class="form-control" type="text" placeholder="Default input">
+                  <input class="form-control" id="exampleHelp" type="text" placeholder="Default input">
                 </div>
               </form>
 
@@ -516,7 +516,7 @@
 
               <form class="mb-5">
                 <div class="form-group">
-                    <label for="disabledInput">Disabled input</label>
+                  <label for="disabledInput">Disabled input</label>
                   <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
                 </div>
               </form>
@@ -596,13 +596,16 @@
 
               <form>
                 <div class="form-group">
-                  <input class="form-control form-control-lg" type="text" placeholder="Large Input">
+                  <label for="sizeLargeInput">Large Input</label>
+                  <input class="form-control form-control-lg" id="sizeLargeInput" type="text" placeholder="Large Input">
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Default input">
+                  <label for="sizeDefaultInput">Default Input</label>
+                  <input class="form-control" id="sizeDefaultInput" type="text" placeholder="Default input">
                 </div>
                 <div class="form-group">
-                  <input class="form-control form-control-sm" type="text" placeholder="Small Input">
+                  <label for="sizeSmallInput">Small Input</label>
+                  <input class="form-control form-control-sm" id="sizeSmallInput" type="text" placeholder="Small Input">
                 </div>
               </form>
 
@@ -635,17 +638,17 @@
               <form>
                 <div class="form-row">
                   <div class="form-group col">
-                    <label>First name</label>
-                    <input type="text" class="form-control" placeholder="First name">
+                    <label for="layoutInput1">First name</label>
+                    <input type="text" id="layoutInput1" class="form-control" placeholder="First name">
                   </div>
                   <div class="form-group col">
-                    <label>Last name</label>
-                    <input type="text" class="form-control" placeholder="Last name">
+                    <label for="layoutInput2">Last name</label>
+                    <input type="text" id="layoutInput2" class="form-control" placeholder="Last name">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label>Address</label>
-                  <input type="text" class="form-control" placeholder="1234 Main St">
+                  <label for="layoutInput3">Address</label>
+                  <input type="text" id="layoutInput3" class="form-control" placeholder="1234 Main St">
                 </div>
               </form>
 
@@ -680,9 +683,9 @@
 
               <form class="mb-3">
                 <div class="form-group">
-                  <label for="">Valid Field</label>
+                  <label for="validField">Valid Field</label>
                   <div class="input-with-icon position-relative">
-                    <input class="form-control is-valid" type="text" placeholder="Valid input">
+                    <input id="validField" class="form-control is-valid" type="text" placeholder="Valid input">
                     <span class="validation-icon position-absolute color-green-text far fa-check-square" data-toggle="tooltip" data-placement="bottom" title="Positive feedback" aria-hidden="true"></span>
                   </div>
                 </div>
@@ -690,9 +693,9 @@
 
               <form class="mb-3">
                 <div class="form-group">
-                  <label for="">Invalid Field</label>
+                  <label for="invalidField">Invalid Field</label>
                   <div class="input-with-icon position-relative">
-                    <input class="form-control is-invalid" type="text" placeholder="Invalid input">
+                    <input id="invalidField" class="form-control is-invalid" type="text" placeholder="Invalid input">
                     <span class="validation-icon position-absolute color-red-text far fa-times-square" data-toggle="tooltip" data-placement="bottom" title="Error feedback" aria-hidden="true"></span>
                   </div>
                 </div>
@@ -700,9 +703,9 @@
 
               <form class="mb-5">
                 <div class="form-group">
-                  <label for="">Warning Field</label>
+                  <label for="warningField">Warning Field</label>
                   <div class="input-with-icon position-relative">
-                    <input class="form-control is-warning" type="text" placeholder="Warning input">
+                    <input id="warningField" class="form-control is-warning" type="text" placeholder="Warning input">
                     <span class="validation-icon position-absolute color-orange-text far fa-exclamation-triangle" data-toggle="tooltip" data-placement="bottom" title="Warning feedback" aria-hidden="true"></span>
                   </div>
                 </div>
@@ -712,24 +715,24 @@
 
               <form class="mb-3">
                 <div class="form-group">
-                  <label for="">Valid Field</label>
-                  <input class="form-control is-valid" type="text" placeholder="Valid input">
+                  <label for="stackedValidField">Valid Field</label>
+                  <input id="stackedValidField" class="form-control is-valid" type="text" placeholder="Valid input">
                   <div class="validation-message color-green-text font-size-smaller mt-1"><span class="validation-icon far fa-check-square" aria-hidden="true"></span> This is a positive validation message</div>
                 </div>
               </form>
 
               <form class="mb-3">
                 <div class="form-group">
-                  <label for="">Invalid Field</label>
-                  <input class="form-control is-invalid" type="text" placeholder="Invalid input">
+                  <label for="stackedInvalidField">Invalid Field</label>
+                  <input id="stackedInvalidField" class="form-control is-invalid" type="text" placeholder="Invalid input">
                   <div class="validation-message color-red-text font-size-smaller mt-1"><span class="validation-icon far fa-times-square" aria-hidden="true"></span> This is a error validation message</div>
                 </div>
               </form>
 
               <form class="mb-3">
                 <div class="form-group">
-                  <label for="">Warning Field</label>
-                  <input class="form-control is-warning" type="text" placeholder="Warning input">
+                  <label for="stackedWarningField">Warning Field</label>
+                  <input id="stackedWarningField" class="form-control is-warning" type="text" placeholder="Warning input">
                   <div class="validation-message color-orange-text font-size-smaller mt-1"><span class="validation-icon far fa-exclamation-triangle" aria-hidden="true"></span> This is a warning validation message</div>
                 </div>
               </form>

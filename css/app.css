@@ -2359,10 +2359,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #3673aa;
+  color: #2D618F;
   text-decoration: none; }
   .btn-link:hover {
-    color: #5b9bd3;
+    color: #4086c3;
     text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: none;
@@ -7002,10 +7002,10 @@ a.text-dark-blue-text:hover, a.text-dark-blue-text:focus {
     margin: 0;
     padding: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #5b9bd3;
+    color: #4086c3;
     text-decoration: none; }
   .dropdown-item.active, .dropdown-item:active {
-    color: #5b9bd3;
+    color: #4086c3;
     text-decoration: none; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #a5a9a9;
@@ -7236,7 +7236,11 @@ a.text-dark-blue-text:hover, a.text-dark-blue-text:focus {
     .toggle .toggle-input:checked ~ .toggle-label::before {
       color: #8AC879;
       border-color: #8AC879;
-      background-color: #8AC879; }
+      background-color: #8AC879;
+      transition: all 0.2s ease-in-out; }
+      @media (prefers-reduced-motion: reduce) {
+        .toggle .toggle-input:checked ~ .toggle-label::before {
+          transition: none; } }
     .toggle .toggle-input:checked ~ .toggle-label::after {
       background-color: #FFF;
       transform: translateX(18px); }
@@ -7245,7 +7249,7 @@ a.text-dark-blue-text:hover, a.text-dark-blue-text:focus {
       .toggle .toggle-input:disabled ~ .toggle-label::before {
         background-color: rgba(230, 231, 231, 0.5); }
     .toggle .toggle-input:focus ~ .toggle-label::before {
-      box-shadow: #DE6868; }
+      box-shadow: 0 0 0 0.2rem rgba(203, 207, 209, 0.5); }
     .toggle .toggle-input:focus:not(:checked) ~ .toggle-label::before {
       border-color: #bfc2c2; }
   .toggle .toggle-label {
@@ -7393,7 +7397,7 @@ a.text-dark-blue-text:hover, a.text-dark-blue-text:focus {
     .scrollable-tabs .nav-item .nav-link:before, .scrollable-tabs .nav-item .nav-link.active:before {
       display: none; }
     .scrollable-tabs .nav-item .nav-link:hover {
-      color: #5b9bd3; }
+      color: #4086c3; }
 
 .navbar {
   position: relative;
@@ -9484,7 +9488,7 @@ button.close {
   border-width: 0.225em; }
 
 a {
-  color: #3673aa;
+  color: #2D618F;
   text-decoration: none;
   background-color: transparent;
   transition: all 0.2s ease-in-out; }
@@ -9492,7 +9496,7 @@ a {
     a {
       transition: none; } }
   a:hover {
-    color: #5b9bd3;
+    color: #4086c3;
     text-decoration: none; }
 
 a.link-light {
@@ -9503,7 +9507,7 @@ a.link-light {
 a.link-dark {
   color: #314851; }
   a.link-dark:hover {
-    color: #76D15D; }
+    color: #4086c3; }
 
 .avatar-example:after, .avatar-example:before {
   content: "";

@@ -12,6 +12,7 @@
                 border-color: $toggle-control-indicator-checked-border-color;
                 @include gradient-bg($toggle-control-indicator-checked-bg);
                 @include box-shadow($toggle-control-indicator-checked-box-shadow);
+                @include transition();
             }
             &::after {
                 background-color: $toggle-control-indicator-bg;
@@ -25,11 +26,7 @@
             }
         }
         &:focus ~ .toggle-label::before {
-            @if $enable-shadows {
-            box-shadow: $input-box-shadow, $input-focus-box-shadow;
-            } @else {
-            box-shadow: $toggle-control-indicator-focus-box-shadow;
-            }
+            box-shadow: 0 0 0 0.2rem rgba(203, 207, 209, 0.5);
         }
         &:focus:not(:checked) ~ .toggle-label::before {
             border-color: $toggle-control-indicator-focus-border-color;

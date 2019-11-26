@@ -20,6 +20,6 @@ a {
   a.link-dark {
     color: $body-color;
     &:hover {
-      color: $lime;
+      color: $link-hover-color;
     }
   }
