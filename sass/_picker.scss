@@ -1,0 +1,130 @@
+.day-picker-input {
+    display: block;
+}
+
+.day-picker-input-overlay-wrapper {
+    z-index: 10;
+    top: 6px;
+}
+
+.day-picker-input-overlay {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.day-picker-wrapper {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-bottom: 1rem;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    .day-picker-nav-bar {
+        .day-picker-nav-button {
+            position: absolute;
+            cursor: pointer;
+            top: 15px;
+            right: 1.5rem;
+            margin-top: 2px;
+            color: #8b9898;
+            width: 1rem;
+            height: 1rem;
+            display: inline-block;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            &.day-picker-nav-button--prev {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    .day-picker-months {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+        .day-picker-month {
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin: 0 1rem;
+            margin-top: 1rem;
+            .day-picker-caption {
+                padding: 0 .5rem;
+                display: table-caption;
+                text-align: left;
+                margin-bottom: .5rem;
+                > div {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #313b44;
+                }
+            }
+            .day-picker-weekdays {
+                margin-top: 1rem;
+                display: table-header-group;
+                .day-picker-weekdays-row {
+                    display: table-row;
+                }
+                .day-picker-weekday {
+                    display: table-cell;
+                    padding: .5rem;
+                    font-size: .875em;
+                    text-align: center;
+                    color: #8b9898;
+                    abbr[title] {
+                        border-bottom: none;
+                        text-decoration: none;
+                        cursor: help;
+                    }
+                }
+            }
+            .day-picker-body {
+                display: table-row-group;
+                .day-picker-week {
+                    display: table-row;
+                    .day-picker-day, 
+                    .day-picker-week-number {
+                        display: table-cell;
+                        cursor: pointer;
+                        vertical-align: middle;
+                    }
+                    .day-picker-day {
+                        text-align: center;
+                        color: #313b44;
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                        line-height: 36px;
+                        padding: 0;
+                        .day-picker-day--outside {
+                            cursor: default;
+                            color: #8b9898;
+                        }
+                        .day-picker-day--today {
+                            background-color: #e6e7e7;
+                            color: #313b44;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .day-picker-footer {
+        padding-top: .5rem;
+        .day-picker-today-button {
+            padding-left: 24px;
+            color: #680098;
+            cursor: pointer;
+        }
+    }
+}
