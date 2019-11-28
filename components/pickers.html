@@ -127,97 +127,99 @@
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-              <div class="form-date-picker">
+              <h3>Calendar Example</h3>
+
+              <div class="form-date-picker mb-5">
 
                 <div class="day-picker-input-overlay-wrapper position-relative" tabindex="0">
                   <div class="day-picker-input-overlay position-relative shadow bg-white" style="width: 288px">
                     <div class="day-picker d-inline-block" lang="en">
-                      <div class="day-picker-wrapper" tabindex="0">
-                        <div class="day-picker-nav-bar">
-                          <span tabindex="0" role="button" aria-label="Previous Month" class="day-picker-nav-button day-picker-nav-button--prev fas fa-caret-left"></span>
-                          <span tabindex="0" role="button" aria-label="Next Month" class="day-picker-nav-button day-picker-nav-button--next fas fa-caret-right"></span>
+                      <div class="day-picker-wrapper position-relative pb-2" tabindex="0">
+                        <div class="day-picker-nav-bar position-absolute">
+                          <span tabindex="0" role="button" aria-label="Previous Month" class="day-picker-nav-button day-picker-nav-button--prev fas fa-caret-left d-inline-block mx-1"></span>
+                          <span tabindex="0" role="button" aria-label="Next Month" class="day-picker-nav-button day-picker-nav-button--next fas fa-caret-right d-inline-block mx-1"></span>
                         </div>
-                        <div class="day-picker-months">
-                          <div class="day-picker-month" role="grid">
-                            <div class="day-picker-caption" role="heading">
-                              <div>November 2019</div>
+                        <div class="day-picker-months d-flex justify-content-center flex-wrap">
+                          <div class="day-picker-month d-table m-2" role="grid">
+                            <div class="day-picker-caption px-1 mb-1 text-left" role="heading">
+                              <div class="font-weight-medium font-size-small">November 2019</div>
                             </div>
                             <div class="day-picker-weekdays" role="rowgroup">
-                              <div class="day-picker-weekdays-row" role="row">
-                                <div class="day-picker-weekday" role="columnheader">
+                              <div class="day-picker-weekdays-row d-table-row" role="row">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Sunday">Su</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Monday">Mo</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Tuesday">Tu</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Wednesday">We</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Thursday">Th</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Friday">Fr</abbr>
                                 </div>
-                                <div class="day-picker-weekday" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
                                   <abbr title="Saturday">Sa</abbr>
                                 </div>
                               </div>
                             </div>
                             <div class="day-picker-body" role="rowgroup">
-                              <div class="day-picker-week" role="row">
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside"></div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--monday day-picker-day--outside"></div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside"></div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside"></div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside"></div>
-                                <div class="day-picker-day" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false">1</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false">2</div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">27</div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">28</div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">29</div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">30</div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">31</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false">1</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false">2</div>
                               </div>
-                              <div class="day-picker-week" role="row">
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false">3</div>
-                                <div class="day-picker-day day-picker-day--monday" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false">4</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false">5</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false">6</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false">7</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false">8</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false">9</div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false">3</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false">4</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false">5</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false">6</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false">7</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false">8</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false">9</div>
                               </div>
-                              <div class="day-picker-week" role="row">
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false">10</div>
-                                <div class="day-picker-day day-picker-day--monday" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false">11</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false">12</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false">13</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false">14</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false">15</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false">16</div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false">10</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false">11</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false">12</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false">13</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false">14</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false">15</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false">16</div>
                               </div>
-                              <div class="day-picker-week" role="row">
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false">17</div>
-                                <div class="day-picker-day day-picker-day--monday" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false">18</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false">19</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false">20</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false">21</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false">22</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false">23</div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false">17</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false">18</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false">19</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false">20</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false">21</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false">22</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false">23</div>
                               </div>
-                              <div class="day-picker-week" role="row">
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false">24</div>
-                                <div class="day-picker-day day-picker-day--monday" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false">25</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false">26</div>
-                                <div class="day-picker-day day-picker-day--today" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false">27</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false">28</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false">29</div>
-                                <div class="day-picker-day" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false">30</div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false">24</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false">25</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false">26</div>
+                                <div class="day-picker-day day-picker-day--today align-middle text-center rounded-circle p-0 font-weight-medium" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false">27</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false">28</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false">29</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false">30</div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="day-picker-footer">
-                          <button type="button" tabindex="0" class="day-picker-today-button" aria-label="Go to Today">Go to Today</button>
+                          <button type="button" tabindex="0" class="day-picker-today-button ml-2 border-0 font-size-smaller font-weight-medium" aria-label="Go to Today">Go to Today</button>
                         </div>
                       </div>
                     </div>
@@ -225,6 +227,23 @@
                 </div>
 
               </div>
+
+              <h3>Input Field</h3>
+
+              <div class="form-date-picker">
+
+                <label for="datePicker">Choose a Date</label>
+                <div class="date-input position-relative"><input type="input" class="form-control" id="datePicker" placeholder="00/00/0000"></div>
+
+              </div>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2>Time Picker</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
             </section>
 
