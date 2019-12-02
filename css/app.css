@@ -9487,14 +9487,17 @@ button.close {
   height: 3.25rem;
   border-width: 0.225em; }
 
-.date-input:after {
-  content: "\f073";
+.picker-input-icon:after {
   font-family: "Font Awesome 5 Pro";
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #a5a9a9; }
+  color: #717677; }
+.picker-input-icon.date-input:after {
+  content: "\f073"; }
+.picker-input-icon.time-input:after {
+  content: "\f017"; }
 
 .day-picker-input-overlay-wrapper {
   z-index: 10;
@@ -9565,6 +9568,19 @@ button.close {
         transition: none; } }
     .day-picker-wrapper .day-picker-footer .day-picker-today-button:hover {
       color: #4086c3; }
+
+.time-picker-body > div {
+  max-height: 300px;
+  overflow: scroll; }
+  .time-picker-body > div ul li {
+    padding: 4px 0; }
+    .time-picker-body > div ul li:hover, .time-picker-body > div ul li.active {
+      background-color: #e6e7e7;
+      cursor: pointer; }
+
+.time-picker-container button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
 
 a {
   color: #2D618F;

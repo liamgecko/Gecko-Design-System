@@ -1,18 +1,26 @@
-.date-input {
+.picker-input-icon {
     &:after {
-        content: "\f073";
         font-family: "Font Awesome 5 Pro";
         position: absolute;
         right: 1rem;
         top: 50%;
         transform: translateY(-50%);
-        color: $grey-lighten-2;
+        color: $grey;
+    }
+    &.date-input {
+        &:after {
+            content: "\f073";
+        }
+    }
+    &.time-input {
+        &:after {
+            content: "\f017";
+        }
     }
 }
 
 .day-picker-input-overlay-wrapper {
     z-index: 10;
-    
     top: 6px;
 }
 .day-picker-input-overlay {
@@ -95,5 +103,27 @@
                 color: $link-hover-color;
             }
         }
+    }
+}
+
+.time-picker-body {
+    > div {
+        max-height: 300px;
+        overflow: scroll;
+        ul li {
+            padding: 4px 0;
+            &:hover,
+            &.active {
+                background-color: $grey-lighten-5;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.time-picker-container {
+    button {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }

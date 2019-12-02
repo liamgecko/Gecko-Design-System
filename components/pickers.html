@@ -127,6 +127,21 @@
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+              <h3>Input Field</h3>
+
+              <div class="row">
+
+                <div class="form-date-picker form-group col-4">
+
+                  <label for="datePicker">Choose a Date</label>
+                  <div class="picker-input-icon date-input position-relative">
+                    <input type="input" class="form-control" id="datePicker" placeholder="00/00/0000">
+                  </div>
+
+                </div>
+
+              </div>
+
               <h3>Calendar Example</h3>
 
               <div class="form-date-picker mb-5">
@@ -140,31 +155,31 @@
                           <span tabindex="0" role="button" aria-label="Next Month" class="day-picker-nav-button day-picker-nav-button--next fas fa-caret-right d-inline-block mx-1"></span>
                         </div>
                         <div class="day-picker-months d-flex justify-content-center flex-wrap">
-                          <div class="day-picker-month d-table m-2" role="grid">
+                          <div class="day-picker-month font-size-smaller d-table m-2" role="grid">
                             <div class="day-picker-caption px-1 mb-1 text-left" role="heading">
                               <div class="font-weight-medium font-size-small">November 2019</div>
                             </div>
                             <div class="day-picker-weekdays" role="rowgroup">
                               <div class="day-picker-weekdays-row d-table-row" role="row">
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Sunday">Su</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Monday">Mo</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Tuesday">Tu</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Wednesday">We</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Thursday">Th</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Friday">Fr</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 font-size-small text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
                                   <abbr title="Saturday">Sa</abbr>
                                 </div>
                               </div>
@@ -210,7 +225,7 @@
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false">24</div>
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false">25</div>
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false">26</div>
-                                <div class="day-picker-day day-picker-day--today align-middle text-center rounded-circle p-0 font-weight-medium" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false">27</div>
+                                <div class="day-picker-day day-picker-day--today d-table-cell align-middle text-center rounded-circle p-0 font-weight-medium" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false">27</div>
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false">28</div>
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false">29</div>
                                 <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false">30</div>
@@ -228,15 +243,6 @@
 
               </div>
 
-              <h3>Input Field</h3>
-
-              <div class="form-date-picker">
-
-                <label for="datePicker">Choose a Date</label>
-                <div class="date-input position-relative"><input type="input" class="form-control" id="datePicker" placeholder="00/00/0000"></div>
-
-              </div>
-
             </section>
 
             <section class="mb-5">
@@ -244,6 +250,86 @@
               <h2>Time Picker</h2>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <h3>Input Field</h3>
+
+              <div class="row mb-5">
+
+                <div class="form-date-picker col-4">
+
+                  <label for="datePicker">Choose a Time</label>
+
+                  <div class="picker-input-icon time-input position-relative dropdown">
+
+                    <div class="dropdown">
+
+                      <input type="input" class="form-control" id="timePicker" placeholder="hh:mm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                      <div class="time-picker-container dropdown-menu shadow-sm rounded" aria-labelledby="timePicker" style="width: 100%;">
+
+                        <div class="time-picker-body d-flex text-center">
+
+                          <div class="hour-picker border-right font-size-smaller col-6 pt-2">
+                            <span class="d-block font-weight-bold mb-1">Hour</span>
+                            <ul class="list-unstyled m-0">
+                              <li>00</li><li>01</li><li>02</li><li>03</li><li class="active">04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li>
+                            </ul>
+                          </div>
+
+                          <div class="minute-picker col-6 font-size-smaller pt-2">
+                            <span class="d-block font-weight-bold mb-1">Minute</span>
+                            <ul class="list-unstyled m-0">
+                              <li class="active">00</li><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li><li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-block">Set Time</button>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <h3>Time Dropdown Example</h3>
+
+              <div class="row">
+
+                <div class="form-time-picker col-4">
+
+                  <div class="time-picker-container position-relative shadow rounded bg-white">
+
+                    <div class="time-picker-body d-flex text-center">
+
+                      <div class="hour-picker border-right font-size-smaller col-6 pt-2">
+                        <span class="d-block font-weight-bold font-size-smaller mb-1">Hour</span>
+                        <ul class="list-unstyled m-0">
+                          <li>00</li><li>01</li><li>02</li><li>03</li><li class="active">04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li>
+                        </ul>
+                      </div>
+
+                      <div class="minute-picker col-6 font-size-smaller pt-2">
+                        <span class="d-block font-weight-bold mb-1">Minute</span>
+                        <ul class="list-unstyled m-0">
+                          <li class="active">00</li><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li><li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-block">Set Time</button>
+  
+                  </div>
+
+                </div>
+
+              </div>
 
             </section>
 
