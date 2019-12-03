@@ -127,15 +127,121 @@
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-              <h3>Input Field</h3>
+              <h3>Default Date Picker</h3>
 
-              <div class="row">
+              <div class="row mb-5">
 
-                <div class="form-date-picker form-group col-4">
+                <div class="form-date-picker col-4">
 
                   <label for="datePicker">Choose a Date</label>
+
                   <div class="picker-input-icon date-input position-relative">
-                    <input type="input" class="form-control" id="datePicker" placeholder="00/00/0000">
+
+                    <div class="dropdown">
+
+                      <input type="input" class="form-control" id="datePicker" placeholder="00/00/0000" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                      <div class="picker-container dropdown-menu" aria-labelledby="datePicker" style="width: 100%;">
+
+                        <div class="day-picker-input-overlay-wrapper position-relative" tabindex="0">
+                          <div class="day-picker-input-overlay position-relative shadow bg-white" style="width: 288px">
+                            <div class="day-picker d-inline-block" lang="en">
+                              <div class="day-picker-wrapper position-relative pb-2" tabindex="0">
+                                <div class="day-picker-nav-bar position-absolute">
+                                  <span tabindex="0" role="button" aria-label="Previous Month" class="day-picker-nav-button day-picker-nav-button--prev fas fa-caret-left d-inline-block mx-1"></span>
+                                  <span tabindex="0" role="button" aria-label="Next Month" class="day-picker-nav-button day-picker-nav-button--next fas fa-caret-right d-inline-block mx-1"></span>
+                                </div>
+                                <div class="day-picker-months d-flex justify-content-center flex-wrap">
+                                  <div class="day-picker-month font-size-smaller d-table m-2" role="grid">
+                                    <div class="day-picker-caption px-1 mb-2 text-left" role="heading">
+                                      <div class="font-weight-medium font-size-small">November 2019</div>
+                                    </div>
+                                    <div class="day-picker-weekdays" role="rowgroup">
+                                      <div class="day-picker-weekdays-row d-table-row" role="row">
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Sunday">Su</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Monday">Mo</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Tuesday">Tu</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Wednesday">We</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Thursday">Th</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Friday">Fr</abbr>
+                                        </div>
+                                        <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                          <abbr title="Saturday">Sa</abbr>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="day-picker-body" role="rowgroup">
+                                      <div class="day-picker-week d-table-row" role="row">
+                                        <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0"><span>27</span></div>
+                                        <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0"><span>28</span></div>
+                                        <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0"><span>29</span></div>
+                                        <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0"><span>30</span></div>
+                                        <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0"><span>31</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>1</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>2</span></div>
+                                      </div>
+                                      <div class="day-picker-week d-table-row" role="row">
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>3</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>4</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false"><span>5</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false"><span>6</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false"><span>7</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>8</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>9</span></div>
+                                      </div>
+                                      <div class="day-picker-week d-table-row" role="row">
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>10</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false"><span>11</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false"><span>12</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false"><span>13</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false"><span>14</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>15</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>16</span></div>
+                                      </div>
+                                      <div class="day-picker-week d-table-row" role="row">
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>17</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false"><span>18</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false"><span>19</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false"><span>20</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false"><span>21</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0 day-picker-day--today font-weight-medium" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>22</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>23</span></div>
+                                      </div>
+                                      <div class="day-picker-week d-table-row" role="row">
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>24</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false"><span>25</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>26</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>27</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>28</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>29</span></div>
+                                        <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>30</span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="day-picker-footer">
+                                  <button type="button" tabindex="0" class="day-picker-today-button ml-2 border-0 font-size-smaller font-weight-medium" aria-label="Go to Today">Go to Today</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
                   </div>
 
                 </div>
@@ -156,79 +262,79 @@
                         </div>
                         <div class="day-picker-months d-flex justify-content-center flex-wrap">
                           <div class="day-picker-month font-size-smaller d-table m-2" role="grid">
-                            <div class="day-picker-caption px-1 mb-1 text-left" role="heading">
+                            <div class="day-picker-caption px-1 mb-2 text-left" role="heading">
                               <div class="font-weight-medium font-size-small">November 2019</div>
                             </div>
                             <div class="day-picker-weekdays" role="rowgroup">
                               <div class="day-picker-weekdays-row d-table-row" role="row">
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Sunday">Su</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Monday">Mo</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Tuesday">Tu</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Wednesday">We</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Thursday">Th</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Friday">Fr</abbr>
                                 </div>
-                                <div class="day-picker-weekday d-table-cell p-1 text-center color-grey" role="columnheader">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
                                   <abbr title="Saturday">Sa</abbr>
                                 </div>
                               </div>
                             </div>
                             <div class="day-picker-body" role="rowgroup">
                               <div class="day-picker-week d-table-row" role="row">
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">27</div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">28</div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">29</div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">30</div>
-                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center rounded-circle p-0">31</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false">1</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false">2</div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>27</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>28</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>29</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>30</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>31</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>1</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>2</span></div>
                               </div>
                               <div class="day-picker-week d-table-row" role="row">
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false">3</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false">4</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false">5</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false">6</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false">7</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false">8</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false">9</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>3</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>4</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false"><span>5</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false"><span>6</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false"><span>7</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>8</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>9</span></div>
                               </div>
                               <div class="day-picker-week d-table-row" role="row">
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false">10</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false">11</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false">12</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false">13</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false">14</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false">15</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false">16</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>10</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false"><span>11</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false"><span>12</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false"><span>13</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false"><span>14</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>15</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>16</span></div>
                               </div>
                               <div class="day-picker-week d-table-row" role="row">
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false">17</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false">18</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false">19</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false">20</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false">21</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false">22</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false">23</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>17</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false"><span>18</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false"><span>19</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false"><span>20</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false"><span>21</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 day-picker-day--today font-weight-medium" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>22</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>23</span></div>
                               </div>
                               <div class="day-picker-week d-table-row" role="row">
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false">24</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false">25</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false">26</div>
-                                <div class="day-picker-day day-picker-day--today d-table-cell align-middle text-center rounded-circle p-0 font-weight-medium" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false">27</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false">28</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false">29</div>
-                                <div class="day-picker-day d-table-cell align-middle text-center rounded-circle p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false">30</div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>24</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false"><span>25</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>26</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>27</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>28</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>29</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>30</span></div>
                               </div>
                             </div>
                           </div>
@@ -247,11 +353,318 @@
 
             <section class="mb-5">
 
+              <h2>Date Range Picker</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <div class="form-date-picker mb-5">
+
+                <div class="day-picker-input-overlay-wrapper position-relative" tabindex="0">
+                  <div class="day-picker-input-overlay position-relative shadow bg-white" style="width: 288px">
+                    <div class="day-picker d-inline-block" lang="en">
+                      <div class="day-picker-wrapper position-relative pb-2" tabindex="0">
+                        <div class="day-picker-nav-bar position-absolute">
+                          <span tabindex="0" role="button" aria-label="Previous Month" class="day-picker-nav-button day-picker-nav-button--prev fas fa-caret-left d-inline-block mx-1"></span>
+                          <span tabindex="0" role="button" aria-label="Next Month" class="day-picker-nav-button day-picker-nav-button--next fas fa-caret-right d-inline-block mx-1"></span>
+                        </div>
+                        <div class="day-picker-months d-flex justify-content-center flex-wrap">
+                          <div class="day-picker-month font-size-smaller d-table m-2" role="grid">
+                            <div class="day-picker-caption px-1 mb-2 text-left" role="heading">
+                              <div class="font-weight-medium font-size-small">November 2019</div>
+                            </div>
+                            <div class="day-picker-weekdays" role="rowgroup">
+                              <div class="day-picker-weekdays-row d-table-row" role="row">
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Sunday">Su</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Monday">Mo</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Tuesday">Tu</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Wednesday">We</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Thursday">Th</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Friday">Fr</abbr>
+                                </div>
+                                <div class="day-picker-weekday d-table-cell text-center color-grey pb-1" role="columnheader">
+                                  <abbr title="Saturday">Sa</abbr>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="day-picker-body" role="rowgroup">
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>27</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>28</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>29</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>30</span></div>
+                                <div aria-disabled="true" class="day-picker-day day-picker-day--outside d-table-cell align-middle text-center p-0"><span>31</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="0" role="gridcell" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>1</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>2</span></div>
+                              </div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>3</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>4</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false"><span>5</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false"><span>6</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false"><span>7</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>8</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>9</span></div>
+                              </div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>10</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false"><span>11</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false"><span>12</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false"><span>13</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false"><span>14</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>15</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>16</span></div>
+                              </div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--start font-weight-medium" tabindex="-1" role="gridcell" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>17</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--selected" tabindex="-1" role="gridcell" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false"><span>18</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--selected" tabindex="-1" role="gridcell" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false"><span>19</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--selected" tabindex="-1" role="gridcell" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false"><span>20</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--selected" tabindex="-1" role="gridcell" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false"><span>21</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0 DayPicker-Day--end font-weight-medium" tabindex="-1" role="gridcell" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>22</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>23</span></div>
+                              </div>
+                              <div class="day-picker-week d-table-row" role="row">
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>24</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false"><span>25</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>26</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>27</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>28</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>29</span></div>
+                                <div class="day-picker-day d-table-cell align-middle text-center p-0" tabindex="-1" role="gridcell" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>30</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="day-picker-footer">
+                          <button type="button" tabindex="0" class="day-picker-today-button ml-2 border-0 font-size-smaller font-weight-medium" aria-label="Go to Today">Go to Today</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2>Date of Birth Picker</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <h3>Day</h3>
+
+              <div class="form-date-picker mb-5">
+
+                <div class="position-relative shadow bg-white" style="width: 340px">
+
+                  <div class="px-1 mb-2 text-center" role="heading">
+                    <div class="font-weight-medium font-size-small color-grey pt-2">Select day</div>
+                  </div>
+
+                  <div class="dob-picker-body mx-2 pb-2">
+
+                    <div class="dob-picker-day d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="0" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>1</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>2</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>3</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>4</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 05 2019" aria-disabled="false" aria-selected="false"><span>5</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 06 2019" aria-disabled="false" aria-selected="false"><span>6</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 07 2019" aria-disabled="false" aria-selected="false"><span>7</span></div>
+                    </div>
+                    <div class="dob-picker-day d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>8</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>9</span></div>
+                      <div class="dob-picker-date" tabindex="-1" raria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>10</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false"><span>11</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false"><span>12</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false"><span>13</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false"><span>14</span></div>
+                      
+                    </div>
+                    <div class="dob-picker-day d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>15</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>16</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>17</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false"><span>18</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false"><span>19</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false"><span>20</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false"><span>21</span></div>
+                      
+                    </div>
+                    <div class="dob-picker-day d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>22</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>23</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>24</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false"><span>25</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>26</span></div>
+                      <div class="dob-picker-date" tabindex="-1" ria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>27</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>28</span></div>
+                    </div>
+                    <div class="dob-picker-day d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>29</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>30</span></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <h3>Month</h3>
+
+              <div class="form-date-picker mb-5">
+
+                <div class="position-relative shadow bg-white" style="width: 340px">
+
+                  <div class="px-1 mb-2 text-center" role="heading">
+                    <div class="font-weight-medium font-size-small color-grey pt-2">Select month</div>
+                  </div>
+
+                  <div class="dob-picker-body mx-2 pb-2">
+
+                    <div class="dob-picker-month d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date mb-1" tabindex="0" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>January</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>February</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>March</span></div>
+                    </div>
+                    <div class="dob-picker-month d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>April</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>May</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>June</span></div>
+                      
+                    </div>
+                    <div class="dob-picker-month d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>July</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" ria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>August</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>September</span></div>
+                    </div>
+                    <div class="dob-picker-month d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>October</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>November</span></div>
+                      <div class="dob-picker-date mb-1" tabindex="-1" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>December</span></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <h3>Year</h3>
+
+              <div class="form-date-picker mb-5">
+
+                <div class="position-relative shadow bg-white" style="width: 340px">
+
+                  <div class="px-1 mb-2 text-center" role="heading">
+                    <div class="font-weight-medium font-size-small color-grey pt-2">Select year</div>
+                  </div>
+
+                  <div class="dob-picker-body mx-2 pb-2">
+
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="0" aria-label="Fri Nov 01 2019" aria-disabled="false" aria-selected="false"><span>2003</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 02 2019" aria-disabled="false" aria-selected="false"><span>2002</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>2001</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>2000</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 03 2019" aria-disabled="false" aria-selected="false"><span>1999</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 04 2019" aria-disabled="false" aria-selected="false"><span>1998</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 08 2019" aria-disabled="false" aria-selected="false"><span>1997</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 09 2019" aria-disabled="false" aria-selected="false"><span>1996</span></div>
+                      <div class="dob-picker-date" tabindex="-1" raria-label="Sun Nov 10 2019" aria-disabled="false" aria-selected="false"><span>1995</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 11 2019" aria-disabled="false" aria-selected="false"><span>1994</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 12 2019" aria-disabled="false" aria-selected="false"><span>1993</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 13 2019" aria-disabled="false" aria-selected="false"><span>1992</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 14 2019" aria-disabled="false" aria-selected="false"><span>1991</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 15 2019" aria-disabled="false" aria-selected="false"><span>1990</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 16 2019" aria-disabled="false" aria-selected="false"><span>1989</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 17 2019" aria-disabled="false" aria-selected="false"><span>1988</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 18 2019" aria-disabled="false" aria-selected="false"><span>1987</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 19 2019" aria-disabled="false" aria-selected="false"><span>1986</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 20 2019" aria-disabled="false" aria-selected="false"><span>1985</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 21 2019" aria-disabled="false" aria-selected="false"><span>1984</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 22 2019" aria-disabled="false" aria-selected="false"><span>1983</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 23 2019" aria-disabled="false" aria-selected="false"><span>1982</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sun Nov 24 2019" aria-disabled="false" aria-selected="false"><span>1981</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Mon Nov 25 2019" aria-disabled="false" aria-selected="false"><span>1980</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>1979</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>1978</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>1977</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>1976</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1975</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1974</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>1973</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>1972</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>1971</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>1970</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1969</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1968</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>1967</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>1966</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>1965</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>1964</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1963</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1962</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>1961</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>1960</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>1959</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>1958</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1957</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1956</span></div>
+                    </div>
+                    <div class="dob-picker-year d-flex flex-row text-center" role="row">
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Tue Nov 26 2019" aria-disabled="false" aria-selected="false"><span>1955</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Wed Nov 27 2019" aria-disabled="false" aria-selected="false"><span>1954</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Thu Nov 28 2019" aria-disabled="false" aria-selected="false"><span>1953</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Fri Nov 29 2019" aria-disabled="false" aria-selected="false"><span>1952</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1951</span></div>
+                      <div class="dob-picker-date" tabindex="-1" aria-label="Sat Nov 30 2019" aria-disabled="false" aria-selected="false"><span>1950</span></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="mb-5">
+
               <h2>Time Picker</h2>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-              <h3>Input Field</h3>
+              <h3>Default Time Picker</h3>
 
               <div class="row mb-5">
 
@@ -259,30 +672,30 @@
 
                   <label for="datePicker">Choose a Time</label>
 
-                  <div class="picker-input-icon time-input position-relative dropdown">
+                  <div class="picker-input-icon time-input position-relative">
 
                     <div class="dropdown">
 
                       <input type="input" class="form-control" id="timePicker" placeholder="hh:mm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                      <div class="time-picker-container dropdown-menu shadow-sm rounded" aria-labelledby="timePicker" style="width: 100%;">
+                      <div class="time-picker-container dropdown-menu shadow-sm rounded bg-white" aria-labelledby="timePicker" style="width: 100%;">
 
                         <div class="time-picker-body d-flex text-center">
 
-                          <div class="hour-picker border-right font-size-smaller col-6 pt-2">
-                            <span class="d-block font-weight-bold mb-1">Hour</span>
+                          <div class="hour-picker border-right font-size-smaller col-6 p-0">
+                            <span class="time-label d-block font-weight-bold position-sticky bg-white py-2">Hour</span>
                             <ul class="list-unstyled m-0">
                               <li>00</li><li>01</li><li>02</li><li>03</li><li class="active">04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li>
                             </ul>
                           </div>
-
-                          <div class="minute-picker col-6 font-size-smaller pt-2">
-                            <span class="d-block font-weight-bold mb-1">Minute</span>
+    
+                          <div class="minute-picker font-size-smaller col-6 p-0">
+                            <span class="time-label d-block font-weight-bold position-sticky bg-white py-2">Minute</span>
                             <ul class="list-unstyled m-0">
-                              <li class="active">00</li><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li><li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li>
+                              <li class="active">00</li><li>05</li><li>10</li><li>15</li><li>20</li><li>25</li><li>30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
                             </ul>
                           </div>
-
+    
                         </div>
 
                         <button type="button" class="btn btn-primary btn-block">Set Time</button>
@@ -307,17 +720,17 @@
 
                     <div class="time-picker-body d-flex text-center">
 
-                      <div class="hour-picker border-right font-size-smaller col-6 pt-2">
-                        <span class="d-block font-weight-bold font-size-smaller mb-1">Hour</span>
+                      <div class="hour-picker border-right font-size-smaller col-6 p-0">
+                        <span class="time-label d-block font-weight-bold position-sticky bg-white py-2">Hour</span>
                         <ul class="list-unstyled m-0">
                           <li>00</li><li>01</li><li>02</li><li>03</li><li class="active">04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li>
                         </ul>
                       </div>
 
-                      <div class="minute-picker col-6 font-size-smaller pt-2">
-                        <span class="d-block font-weight-bold mb-1">Minute</span>
+                      <div class="minute-picker font-size-smaller col-6 p-0">
+                        <span class="time-label d-block font-weight-bold position-sticky bg-white py-2">Minute</span>
                         <ul class="list-unstyled m-0">
-                          <li class="active">00</li><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li><li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li>
+                          <li class="active">00</li><li>05</li><li>10</li><li>15</li><li>20</li><li>25</li><li>30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
                         </ul>
                       </div>
 

@@ -21,7 +21,6 @@
 
 .day-picker-input-overlay-wrapper {
     z-index: 10;
-    top: 6px;
 }
 .day-picker-input-overlay {
     left: 0;
@@ -76,20 +75,49 @@
                         cursor: pointer;
                     }
                     .day-picker-day {
-                        height: 36px;
-                        width: 36px;
-                        line-height: 36px;
-                        @include transition();
+                        span {
+                            display: block;
+                            height: 36px;
+                            width: 36px;
+                            line-height: 36px;
+                            border-radius: 5px;
+                            @include transition();
+                        }
                         &.day-picker-day--outside {
+                            span {
                             cursor: default;
                             color: $grey-lighten-3;
-                            &:hover {
-                                background-color: transparent;
+                                &:hover {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                        &.DayPicker-Day--selected {
+                            span {
+                                background-color: lighten($grey-lighten-5, 6%);
+                                border-radius: 0;
+                                &:hover {
+                                    background-color: lighten($grey-lighten-5, 6%);
+                                }
+                            }
+                        }
+                        &.DayPicker-Day--start {
+                            span {
+                                border-radius: 5px 0 0 5px;
+                            }
+                        }
+                        &.DayPicker-Day--end {
+                            span {
+                                border-radius: 0 5px 5px 0;
                             }
                         }
                         &.day-picker-day--today,
+                        &.DayPicker-Day--start,
+                        &.DayPicker-Day--end,
                         &:hover {
-                            background-color: #e6e7e7;
+                            span {
+                                background-color: $grey-lighten-5;
+                            }
                         }
                     }
                 }
@@ -119,11 +147,49 @@
             }
         }
     }
+    .time-label {
+        top: 0;
+    }
 }
 
 .time-picker-container {
     button {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+    }
+}
+
+.dob-picker-body {
+    height: 196px;
+    overflow: scroll;
+    .dob-picker-date {
+        width: 14.285714285714286%;
+        span {
+            display: block;
+            border-radius: 5px;
+            height: 36px;
+            line-height: 36px;
+            cursor: pointer;
+            @include transition();
+            &:hover {
+                background-color: $grey-lighten-5;
+            }
+        }
+    }
+    .dob-picker-day {
+        span {
+            width: 36px;
+            
+        }
+    }
+    .dob-picker-month {
+        .dob-picker-date {
+            width: 33.333333333333333%;
+        }
+    }
+    .dob-picker-year {
+        .dob-picker-date {
+            width: 16.666666666666667%;
+        }
     }
 }
