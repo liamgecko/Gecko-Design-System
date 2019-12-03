@@ -179,7 +179,15 @@
     .dob-picker-day {
         span {
             width: 36px;
-            
+        }
+        .disabled {
+            span {
+                cursor: not-allowed;
+                color: $grey-lighten-3;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
         }
     }
     .dob-picker-month {

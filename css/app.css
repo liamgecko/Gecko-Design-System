@@ -9612,6 +9612,11 @@ button.close {
         background-color: #e6e7e7; }
   .dob-picker-body .dob-picker-day span {
     width: 36px; }
+  .dob-picker-body .dob-picker-day .disabled span {
+    cursor: not-allowed;
+    color: #bfc2c2; }
+    .dob-picker-body .dob-picker-day .disabled span:hover {
+      background-color: transparent; }
   .dob-picker-body .dob-picker-month .dob-picker-date {
     width: 33.333333333333333%; }
   .dob-picker-body .dob-picker-year .dob-picker-date {
