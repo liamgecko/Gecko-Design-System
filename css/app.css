@@ -1951,9 +1951,9 @@ textarea.form-control {
   top: 50%;
   transform: translateY(-50%); }
   .input-icon.input-icon-right {
-    right: 8px; }
+    right: 16px; }
   .input-icon.input-icon-left {
-    left: 8px; }
+    left: 16px; }
 
 .form-check-btn input[type="radio"],
 .form-check-btn input[type="checkbox"] {
@@ -1964,6 +1964,9 @@ textarea.form-control {
   .form-check-btn input[type="checkbox"]:checked + label {
     background-color: #eff6fb;
     border-color: #77acda; }
+  .form-check-btn input[type="radio"]:focus + label,
+  .form-check-btn input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 0 0.2rem rgba(119, 172, 218, 0.25); }
 .form-check-btn label {
   display: inline-block;
   background-color: #FFF;
@@ -1992,7 +1995,7 @@ label[for=file-upload] {
   margin-left: 32px; }
   .select-value:not(:first-of-type):before {
     content: "OR";
-    background: #30628e;
+    background: #2D618F;
     position: absolute;
     bottom: 0;
     left: -30px;
@@ -2006,6 +2009,24 @@ label[for=file-upload] {
     text-align: center; }
 .select-value .select-value-icon {
   margin-right: 5px; }
+
+.chosen-container .chosen-single input:focus {
+  box-shadow: none; }
+.chosen-container .dropdown-menu {
+  top: -2px !important;
+  margin: 0;
+  width: 100%;
+  border-color: #77acda; }
+  .chosen-container .dropdown-menu:before {
+    display: none; }
+.chosen-container .chosen-results li {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .chosen-container .chosen-results li {
+      transition: none; } }
+  .chosen-container .chosen-results li:hover, .chosen-container .chosen-results li.result-selected {
+    background-color: #e6e7e7; }
 
 .btn {
   display: inline-block;
@@ -9485,18 +9506,6 @@ button.close {
   width: 3.25rem;
   height: 3.25rem;
   border-width: 0.225em; }
-
-.picker-input-icon:after {
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #717677; }
-.picker-input-icon.date-input:after {
-  content: "\f073"; }
-.picker-input-icon.time-input:after {
-  content: "\f017"; }
 
 .day-picker-input-overlay-wrapper {
   z-index: 10; }

@@ -1,24 +1,3 @@
-.picker-input-icon {
-    &:after {
-        font-family: "Font Awesome 5 Pro";
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: $grey;
-    }
-    &.date-input {
-        &:after {
-            content: "\f073";
-        }
-    }
-    &.time-input {
-        &:after {
-            content: "\f017";
-        }
-    }
-}
-
 .day-picker-input-overlay-wrapper {
     z-index: 10;
 }

@@ -4,7 +4,7 @@
         margin-left: 32px;
         &:before {
             content: "OR";
-            background: #30628e;
+            background: $primary;
             position: absolute;
             bottom: 0;
             left: -30px;
@@ -20,5 +20,34 @@
     }
     .select-value-icon {
         margin-right: 5px
+    }
+}
+
+.chosen-container {
+    .chosen-single {
+        input {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .dropdown-menu {
+        top: -2px !important;
+        margin: 0;
+        width: 100%;
+        border-color: $input-focus-border-color;
+        &:before {
+            display: none;
+        }
+    }
+    .chosen-results {
+        li {
+            cursor: pointer;
+            @include transition();
+            &:hover,
+            &.result-selected {
+                background-color: $grey-lighten-5;
+            }
+        }
     }
 }

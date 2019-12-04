@@ -327,10 +327,10 @@ textarea.form-control {
     top: 50%;
     transform: translateY(-50%);
     &.input-icon-right {
-      right: $spacer;
+      right: $spacer*2;
     }
     &.input-icon-left {
-      left: $spacer;
+      left: $spacer*2;
     }
   }
 
@@ -345,6 +345,9 @@ textarea.form-control {
       &:checked + label {
         background-color: $blue-lighten-4;
         border-color: $input-focus-border-color;
+      }
+      &:focus + label {
+        box-shadow: 0 0 0 0.2rem rgba(119, 172, 218, 0.25);
       }
     }
     label {
@@ -376,3 +379,4 @@ textarea.form-control {
       transform: translateY(-50%);
     }
   }
+  
