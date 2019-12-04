@@ -9602,12 +9602,14 @@ button.close {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.dob-picker-body {
+.form-dob-picker .picker-nav-bar {
+  right: 1rem; }
+.form-dob-picker .dob-picker-body {
   height: 196px;
   overflow: scroll; }
-  .dob-picker-body .dob-picker-date {
+  .form-dob-picker .dob-picker-body .dob-picker-date {
     width: 14.285714285714286%; }
-    .dob-picker-body .dob-picker-date span {
+    .form-dob-picker .dob-picker-body .dob-picker-date span {
       display: block;
       border-radius: 5px;
       height: 36px;
@@ -9615,20 +9617,20 @@ button.close {
       cursor: pointer;
       transition: all 0.2s ease-in-out; }
       @media (prefers-reduced-motion: reduce) {
-        .dob-picker-body .dob-picker-date span {
+        .form-dob-picker .dob-picker-body .dob-picker-date span {
           transition: none; } }
-      .dob-picker-body .dob-picker-date span:hover {
+      .form-dob-picker .dob-picker-body .dob-picker-date span:hover {
         background-color: #e6e7e7; }
-  .dob-picker-body .dob-picker-day span {
+  .form-dob-picker .dob-picker-body .dob-picker-day span {
     width: 36px; }
-  .dob-picker-body .dob-picker-day .disabled span {
+  .form-dob-picker .dob-picker-body .dob-picker-day .disabled span {
     cursor: not-allowed;
     color: #bfc2c2; }
-    .dob-picker-body .dob-picker-day .disabled span:hover {
+    .form-dob-picker .dob-picker-body .dob-picker-day .disabled span:hover {
       background-color: transparent; }
-  .dob-picker-body .dob-picker-month .dob-picker-date {
+  .form-dob-picker .dob-picker-body .dob-picker-month .dob-picker-date {
     width: 33.333333333333333%; }
-  .dob-picker-body .dob-picker-year .dob-picker-date {
+  .form-dob-picker .dob-picker-body .dob-picker-year .dob-picker-date {
     width: 16.666666666666667%; }
 
 a {

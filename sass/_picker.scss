@@ -1,6 +1,7 @@
 .day-picker-input-overlay-wrapper {
     z-index: 10;
 }
+
 .day-picker-input-overlay {
     left: 0;
     z-index: 1;
@@ -138,45 +139,50 @@
     }
 }
 
-.dob-picker-body {
-    height: 196px;
-    overflow: scroll;
-    .dob-picker-date {
-        width: 14.285714285714286%;
-        span {
-            display: block;
-            border-radius: 5px;
-            height: 36px;
-            line-height: 36px;
-            cursor: pointer;
-            @include transition();
-            &:hover {
-                background-color: $grey-lighten-5;
-            }
-        }
+.form-dob-picker {
+    .picker-nav-bar {
+        right: 1rem;
     }
-    .dob-picker-day {
-        span {
-            width: 36px;
-        }
-        .disabled {
+    .dob-picker-body {
+        height: 196px;
+        overflow: scroll;
+        .dob-picker-date {
+            width: 14.285714285714286%;
             span {
-                cursor: not-allowed;
-                color: $grey-lighten-3;
+                display: block;
+                border-radius: 5px;
+                height: 36px;
+                line-height: 36px;
+                cursor: pointer;
+                @include transition();
                 &:hover {
-                    background-color: transparent;
+                    background-color: $grey-lighten-5;
                 }
             }
         }
-    }
-    .dob-picker-month {
-        .dob-picker-date {
-            width: 33.333333333333333%;
+        .dob-picker-day {
+            span {
+                width: 36px;
+            }
+            .disabled {
+                span {
+                    cursor: not-allowed;
+                    color: $grey-lighten-3;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
         }
-    }
-    .dob-picker-year {
-        .dob-picker-date {
-            width: 16.666666666666667%;
+        .dob-picker-month {
+            .dob-picker-date {
+                width: 33.333333333333333%;
+            }
+        }
+        .dob-picker-year {
+            .dob-picker-date {
+                width: 16.666666666666667%;
+            }
         }
     }
 }
