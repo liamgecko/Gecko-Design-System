@@ -57,9 +57,9 @@
                     .day-picker-day {
                         span {
                             display: block;
-                            height: 36px;
-                            width: 36px;
-                            line-height: 36px;
+                            height: $picker-height;
+                            width: $picker-height;
+                            line-height: $picker-line-height;
                             border-radius: 5px;
                             @include transition();
                         }
@@ -151,8 +151,8 @@
             span {
                 display: block;
                 border-radius: 5px;
-                height: 36px;
-                line-height: 36px;
+                height: $picker-height;
+                line-height: $picker-line-height;
                 cursor: pointer;
                 @include transition();
                 &:hover {

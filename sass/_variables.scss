@@ -1040,3 +1040,8 @@ $chat-bubble-error-border:             transparent $chat-bubble-error transparen
 $chat-bubble-error-agent-border:       $chat-bubble-error transparent transparent !default;
 $chat-bubble-note-border:              transparent $chat-bubble-note transparent transparent !default;
 $chat-bubble-note-agent-border:        $chat-bubble-note transparent transparent !default;
+
+// PICKERS
+
+$picker-height:          36px !default;
+$picker-line-height:     $picker-height !default;
