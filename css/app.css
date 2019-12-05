@@ -9301,13 +9301,13 @@ button.close {
   overflow-wrap: break-word;
   word-break: break-word; }
 .conversation-message .conversation-message-content {
-  background: #f1f1f1;
+  background: #e6e7e7;
   z-index: 0;
   max-width: 100%; }
   .conversation-message .conversation-message-content:before {
     content: "";
     border-width: 0 14px 12px 0;
-    border-color: transparent #f1f1f1 transparent transparent;
+    border-color: transparent #e6e7e7 transparent transparent;
     width: 0;
     height: 0;
     border-style: solid;
@@ -9325,6 +9325,18 @@ button.close {
     right: -12px; }
 .conversation-message.agent .conversation-message-meta {
   text-align: right; }
+.conversation-message.failed .conversation-message-content {
+  background: #f9e1e1; }
+  .conversation-message.failed .conversation-message-content:before {
+    border-color: transparent #f9e1e1 transparent transparent; }
+.conversation-message.failed.agent .conversation-message-content:before {
+  border-color: #f9e1e1 transparent transparent; }
+.conversation-message.note .conversation-message-content {
+  background: #fbf3c8; }
+  .conversation-message.note .conversation-message-content:before {
+    border-color: transparent #fbf3c8 transparent transparent; }
+.conversation-message.note.agent .conversation-message-content:before {
+  border-color: #fbf3c8 transparent transparent; }
 
 .carousel {
   position: relative; }

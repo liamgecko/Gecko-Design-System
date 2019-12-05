@@ -6,13 +6,13 @@
         word-break: break-word;
     }
     .conversation-message-content {
-        background: #f1f1f1;
+        background: $chat-bubble-default;
         z-index: 0;
         max-width: 100%;
         &:before {
             content: "";
             border-width: 0 14px 12px 0;
-            border-color: transparent #f1f1f1 transparent transparent;
+            border-color: $chat-bubble-default-border;
             width: 0;
             height: 0;
             border-style: solid;
@@ -26,16 +26,46 @@
             flex-direction: row-reverse;
         }
         .conversation-message-content {
-            background-color: #f2eff4; 
+            background-color: $chat-bubble-agent; 
             &:before {
                 border-width: 12px 14px 0 0;
-                border-color: #f2eff4 transparent transparent;
+                border-color: $chat-bubble-agent-border;
                 left: auto;
                 right: -12px;
             }
         }
         .conversation-message-meta {
             text-align: right;
+        }
+    }
+    &.failed {
+        .conversation-message-content {
+            background: $chat-bubble-error;
+            &:before {
+                border-color: $chat-bubble-error-border;
+            }
+        }
+    }
+    &.failed.agent {
+        .conversation-message-content {
+            &:before {
+                border-color: $chat-bubble-error-agent-border;
+            }
+        }
+    }
+    &.note {
+        .conversation-message-content {
+            background: $chat-bubble-note;
+            &:before {
+                border-color: $chat-bubble-note-border;
+            }
+        }
+    }
+    &.note.agent {
+        .conversation-message-content {
+            &:before {
+                border-color: $chat-bubble-note-agent-border;
+            }
         }
     }
 }

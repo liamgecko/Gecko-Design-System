@@ -2,7 +2,7 @@
 
 @import "functions/adjust-colors";
 
-// 1. PRIMARY
+// PRIMARY
 
 // // Slate Grey
 $slate:           #314851 !default;
@@ -63,7 +63,7 @@ $ice :    #F8FAFB !default;
 // // Ice White
 $fog :    #F9F9F9 !default;
 
-// 2. SECONDARY
+// SECONDARY
 
 // // Error
 $red:    #DE6868 !default;
@@ -260,14 +260,14 @@ $yiq-contrasted-threshold:  150 !default;
 $yiq-text-dark:             $slate !default;
 $yiq-text-light:            $white !default;
 
-// 3. UI
+// UI
 
 $border-color:        $grey-lighten-4 !default;
 $body-bg:             $ice !default;
 $body-color:          $slate !default;
 $body-color-light:    $slate-lighten-2 !default;
 
-// 4. LINKS 
+// LINKS 
 
 $link-color:              $dark-blue !default; 
 $link-hover-color:        $dark-blue-lighten-2 !default;
@@ -275,7 +275,7 @@ $link-decoration:         none !default;
 $link-hover-decoration:   none !default;
 $emphasized-link-hover-darken-percentage: 15% !default;
 
-// 5. OPTIONS
+// OPTIONS
 
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
@@ -322,7 +322,7 @@ $container-max-widths: (
 $grid-columns:                12 !default;
 $grid-gutter-width:           32px !default;
 
-// 6. COMPONENTS
+// COMPONENTS
 
 $line-height-lg:        1.5 !default;
 $line-height-sm:        1.5 !default;
@@ -347,7 +347,7 @@ $transition-collapse:         height .35s ease !default;
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
 
-// 7. SIZING 
+// SIZING 
 
 $spacer: 8px !default; // sets a default spacing of 8px
 $spacers: () !default;
@@ -378,7 +378,7 @@ $sizes: map-merge(
   $sizes
 );
 
-// 8. TYPOGRAPHY
+// TYPOGRAPHY
 
 $font-family-sans-serif:    'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:     SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
@@ -468,7 +468,7 @@ $pre-color:                   $slate !default;
 $pre-scrollable-max-height:   340px !default;
 
 
-// 9. TABLES
+// TABLES
 
 $table-cell-padding:          $spacer * 2 !default;
 $table-cell-padding-sm:       $spacer !default;
@@ -494,7 +494,7 @@ $table-caption-color:         $text-muted !default;
 $table-bg-level:              -9 !default;
 $table-border-level:          -6 !default;
 
-// 10. TOOLTIPS
+// TOOLTIPS
 
 $tooltip-font-size:                 $font-size-small !default;
 $tooltip-max-width:                 200px !default;
@@ -517,7 +517,7 @@ $form-feedback-tooltip-line-height:   $line-height-base !default;
 $form-feedback-tooltip-opacity:       $tooltip-opacity !default;
 $form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
 
-// 11. UTILITIES
+// UTILITIES
 
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
 $overflows: auto, hidden !default;
@@ -531,7 +531,7 @@ $zindex-modal:                      1050 !default;
 $zindex-popover:                    1060 !default;
 $zindex-tooltip:                    1070 !default;
 
-// 12. IMAGES
+// IMAGES
 
 $thumbnail-padding:                 .25rem !default;
 $thumbnail-bg:                      $body-bg !default;
@@ -542,7 +542,7 @@ $thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
 $figure-caption-font-size:          90% !default;
 $figure-caption-color:              $body-color !default;
 
-// 13. BREADCRUMBS
+// BREADCRUMBS
 
 $breadcrumb-item-padding:           .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
@@ -550,7 +550,7 @@ $breadcrumb-divider-color:          $grey-lighten-2 !default;
 $breadcrumb-active-color:           $slate !default;
 $breadcrumb-divider:                quote("/") !default;
 
-// 14. BUTTONS
+// BUTTONS
 
 $input-btn-padding-y:         .4rem !default;
 $input-btn-padding-x:         1rem !default;
@@ -597,7 +597,7 @@ $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
-// 15. FORMS
+// FORMS
 
 $label-margin-bottom:                   .25rem !default;
 $input-padding-y:                       $input-btn-padding-y !default;
@@ -651,7 +651,7 @@ $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $grey !default;
 $input-group-addon-border-color:        $input-border-color !default;
 
-// 16. CARDS
+// CARDS
 
 $card-spacer-y:                     $spacer * 1.5 !default;
 $card-spacer-x:                     $spacer * 3 !default;
@@ -670,7 +670,7 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
-// 17. RESPONSIVE EMBED
+// RESPONSIVE EMBED
 
 $embed-responsive-aspect-ratios: () !default;
 $embed-responsive-aspect-ratios: join(
@@ -683,7 +683,7 @@ $embed-responsive-aspect-ratios: join(
   $embed-responsive-aspect-ratios
 );
 
-// 18. NAVS
+// NAVS
 
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
@@ -701,7 +701,7 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 $nav-divider-color:                 $grey !default;
 $nav-divider-margin-y:              $spacer / 2 !default;
 
-// 19. DROPDOWN
+// DROPDOWN
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
@@ -1023,7 +1023,20 @@ $spinner-width-xl:        3.25rem !default;
 $spinner-height-xl:       $spinner-width-xl !default;
 $spinner-border-width-xl: .225em !default;
 
-// Printing
+// PRINTING
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+// CHAT BUBBLE
+
+$chat-bubble-default:                  $grey-lighten-5 !default;
+$chat-bubble-agent:                  #f2eff4 !default;
+$chat-bubble-error:                    lighten($red-lighten-2, 15%) !default;
+$chat-bubble-note:                     lighten(#f7e999, 10%) !default;
+$chat-bubble-default-border:           transparent $chat-bubble-default transparent transparent !default;
+$chat-bubble-agent-border:             $chat-bubble-agent transparent transparent !default;
+$chat-bubble-error-border:             transparent $chat-bubble-error transparent transparent !default;
+$chat-bubble-error-agent-border:       $chat-bubble-error transparent transparent !default;
+$chat-bubble-note-border:              transparent $chat-bubble-note transparent transparent !default;
+$chat-bubble-note-agent-border:        $chat-bubble-note transparent transparent !default;
