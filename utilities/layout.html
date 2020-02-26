@@ -39,18 +39,18 @@
                 <span class="sr-only">Brand Guidelines</span>
               </a>
             </li>
-            <li class="active">
+            <li>
               <a class="link-light p-2 font-size-large border-left-transparent" href="../components/alerts.html" data-toggle="tooltip" data-placement="right" title="Components">
                 <span class="fal fa-browser" title="Components" aria-hidden="true"></span>
                 <span class="sr-only">Components</span>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a class="link-light p-2 font-size-large border-left-transparent" href="../utilities/utilities.html" data-toggle="tooltip" data-placement="right" title="Utilities">
                 <span class="fal fa-wrench" title="Utilities" aria-hidden="true"></span>
                 <span class="sr-only">Utilities</span>
               </a>
-            </li>
+            </li class="active">
             <li>
               <a class="link-light p-2 font-size-large" href="" data-toggle="tooltip" data-placement="right" title="Download Sketch File">
                 <span class="fal fa-download" title="Download Sketch File" aria-hidden="true"></span>
@@ -63,31 +63,12 @@
 
           <div class="nav-container-inner p-3">
 
-            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Components</span>
+            <span class="pb-1 mb-2 font-style-uppercase font-size-smaller font-weight-medium">Utilities</span>
             <ul class="list-unstyled m-0">
-              <li><a class="link-light pb-1 mb-1" href="alerts.html">Alerts</a></li>
-              <li><a class="link-light pb-1 mb-1" href="avatars.html">Avatars</a></li>
-              <li><a class="link-light pb-1 mb-1" href="badges.html">Badges</a></li>
-              <li><a class="link-light pb-1 mb-1" href="breadcrumbs.html">Breadcrumbs</a></li>
-              <li><a class="link-light pb-1 mb-1" href="buttons.html">Buttons</a></li>
-              <li><a class="link-light pb-1 mb-1" href="cards.html">Cards</a></li>
-              <li><a class="link-light pb-1 mb-1" href="chatbubble.html">Chat Bubble</a></li>
-              <li><a class="link-light pb-1 mb-1" href="collapse.html">Collapse</a></li>
-              <li><a class="link-light pb-1 mb-1" href="dropdown.html">Dropdown</a></li>
-              <li><a class="link-light pb-1 mb-1" href="forms.html">Forms</a></li>
-              <li><a class="link-light pb-1 mb-1" href="modal.html">Modal</a></li>
-              <li><a class="link-light pb-1 mb-1" href="pagination.html">Pagination</a></li>
-              <li><a class="link-light pb-1 mb-1" href="pickers.html">Pickers</a></li>
-              <li><a class="link-light pb-1 mb-1" href="popover.html">Popover</a></li>
-              <li><a class="link-light pb-1 mb-1" href="progress-bar.html">Progress Bar</a></li>
-              <li><a class="link-light pb-1 mb-1" href="select.html">Select</a></li>
-              <li><a class="link-light pb-1 mb-1" href="spinner.html">Spinner</a></li>
-              <li><a class="link-light pb-1 mb-1" href="table.html">Table</a></li>
-              <li><a class="link-light pb-1 mb-1" href="tabs.html">Tabs</a></li>
-              <li><a class="link-light pb-1 mb-1" href="texteditor.html">Text Editor</a></li>
-              <li><a class="link-light pb-1 mb-1" href="toasts.html">Toasts</a></li>
-              <li><a class="link-light pb-1 mb-1" href="toggle.html">Toggle</a></li>
-              <li><a class="link-light pb-1 mb-1" href="tooltips.html">Tooltips</a></li>
+              <li><a class="link-light pb-1 mb-1" href="display.html">Display</a></li>
+              <li><a class="link-light pb-1 mb-1" href="layout.html">Layout</a></li>
+              <li><a class="link-light pb-1 mb-1" href="sizing.html">Sizing</a></li>
+              <li><a class="link-light pb-1 mb-1" href="styling.html">Styling</a></li>
             </ul>
 
           </div>
@@ -102,7 +83,7 @@
 
       <div class="header content-header py-2 px-4 d-flex align-items-center bg-white border-bottom">
         <div class="main-heading">
-          <span class="fal fa-browser mr-1 float-left font-size-larger color-lime" aria-hidden="true"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Breadcrumbs</span>
+          <span class="fal fa-wrench mr-1 float-left font-size-larger color-lime" aria-hidden="true"></span> <span class="font-style-uppercase font-size-smaller font-weight-bold float-left">Layout</span>
         </div>
       </div>
 
@@ -114,41 +95,49 @@
 
             <section class="mb-5">
 
-              <h2 id="breadcrumb-default">Default Breadcrumbs</h2>
+              <h2 id="layout-about">About Layout</h2>
 
-              <p>Breadcrumbs are typically constructed with an <code><span>ol</span></code> because their order matters. You mark up breadcrumbs with classes from the inline list utility. When you add the <code><span>.breadcrumb</span></code> class, the separators are automatically generated.</p>
-
-              <div class="my-5">
-
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb list-inline">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Events</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Add New Event</li>
-                  </ol>
-                </nav>
-                
-              </div>
-
-<!-- CODE SNIPPET -->
-<!-- <figure class="highlight">
-<pre><code data-language="html"><nav aria-label="breadcrumb">
-  <ol class="breadcrumb list-inline">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Events</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Add New Event</li>
-  </ol>
-</nav>
-</code></pre>
-</figure> -->
+              <p>Components and options for laying out our products, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>
 
             </section>
 
             <section class="mb-5">
 
-              <h2 id="breadcrumb-accessibility">Accessibility</h2>
+              <h2 id="layout-grid">Grid</h2>
 
-              <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code><span>aria-label="breadcrumb"</span></code> to describe the type of navigation provided in the <code><span>nav</span></code> element, as well as applying an <code><span>aria-current="page"</span></code> to the last item of the set to indicate that it represents the current page.</p>
+              <p>Use the powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+
+              <a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">View Grid Utilities<span class="far fa-angle-right ml-1"></span></a>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="layout-flex">Flex</h2>
+
+              <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. </p>
+
+              <a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/utilities/flex/" target="_blank">View Flex Utilities <span class="far fa-angle-right ml-1"></span></a>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="layout-flex">Float</h2>
+
+              <p>Toggle floats on any element, across any breakpoint, using responsive float utilities. </p>
+
+              <a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/utilities/float/" target="_blank">View Float Utilities <span class="far fa-angle-right ml-1"></span></a>
+
+            </section>
+
+            <section class="mb-5">
+
+              <h2 id="layout-flex">Position</h2>
+
+              <p>Shorthand utilities for quickly configuring the position of an element.</p>
+
+              <a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/utilities/position/" target="_blank">View Position Utilities <span class="far fa-angle-right ml-1"></span></a>
 
             </section>
 
@@ -157,8 +146,9 @@
           <div class="content-sub-nav sticky-top d-none d-xl-block col-xl-3 pl-4 border-left">
             <h4 class="mb-2">Sections</h4>
             <ul class="list-unstyled">
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#breadcrumb-default">Default Breadcrumbs</a></li>
-              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#breadcrumb-accessibility">Accessibility</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#alerts-standard">Standard Alerts</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#alerts-with-icons">Alerts with Icons</a></li>
+              <li><a class="link-dark mb-1 pb-1 border-bottom font-size-smaller" href="#alerts-dismiss">Dismissable Alerts</a></li>
             </ul>
           </div>
 
